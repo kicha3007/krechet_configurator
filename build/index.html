@@ -14,182 +14,120 @@
   <body>
     <div class="it-main-page__wrapper">
       <div class="it-main-page__content">
-        <section class="it-base-steps it-all--indent" id="it-base-steps">
+        <section class="it-configurator it-all--indent" id="it-configurator">
           <div class="it-container">
-            <div class="it-base-steps__wrap">
-              <div class="it-base-steps__title" data-calculation-title="data-calculation-title"><b>Калькулятор:</b> рассчитайте стоимость изготовления</div>
-              <div class="it-base-steps__item">
-                <div class="it-base-steps__step-wrap">
-                  <div class="it-base-steps__step-inner-wrap">
-                    <div class="it-base-steps__step-number"> 1</div>
-                    <div class="it-base-steps__step-text active" data-calculation-text="1">Базовые<br>                                                                                                        параметры</div>
-                  </div>
-                  <div class="it-base-steps__step-inner-wrap">
-                    <div class="it-base-steps__step-number"> 2</div>
-                    <div class="it-base-steps__step-text" data-calculation-text="2">Дополнительные<br>                                                                                                 опции</div>
-                  </div>
-                  <div class="it-base-steps__step-inner-wrap it-base-steps__step-inner-wrap--size">
-                    <div class="it-base-steps__step-number"> 3</div>
-                    <div class="it-base-steps__step-text" data-calculation-text="3">Отправка<br>заявки</div>
-                  </div>
+            <div class="it-configurator__wrap">
+              <div class="it-configurator__title" data-calculation-title="data-calculation-title"><b>Калькулятор:</b> рассчитайте стоимость изготовления</div>
+              <div class="it-configurator__step-wrap">
+                <div class="it-configurator__step-inner-wrap">
+                  <div class="it-configurator__step-number"> 1</div>
+                  <div class="it-configurator__step-text active" data-calculation-text="1">Выберите модель</div>
                 </div>
-                <div class="it-base-steps__step-line">
-                  <div class="it-base-steps__line-inner" data-it-line-inner=""></div>
-                  <div class="it-base-steps__line-dot active it-base-steps__line-dot--one" data-dot-line="1"></div>
-                  <div class="it-base-steps__line-dot it-base-steps__line-dot--two" data-dot-line="2"></div>
-                  <div class="it-base-steps__line-dot it-base-steps__line-dot--three" data-dot-line="3"></div>
+                <div class="it-configurator__step-inner-wrap">
+                  <div class="it-configurator__step-number"> 2</div>
+                  <div class="it-configurator__step-text" data-calculation-text="2">Добавьте оборудование</div>
                 </div>
-                <form class="it-base-steps__form it-form--hide" name="calc" action="/callback.php" data-it-form="">
+                <div class="it-configurator__step-inner-wrap it-configurator__step-inner-wrap--size">
+                  <div class="it-configurator__step-number"> 3</div>
+                  <div class="it-configurator__step-text" data-calculation-text="3">Отправьте заявку</div>
                   <input type="hidden" name="name" value="">
                   <input type="hidden" name="phone" value="">
                   <input type="hidden" name="message" value="">
-                  <ul class="it-base-steps__inner-wrap">
-                    <li class="it-base-steps__inner-item" data-it-calculation-item="1">
-                      <div class="it-base-steps__item-wrap it-base-steps__item-wrap--indent">
-                        <div class="it-base-steps__item-half">
-                          <div class="it-base-steps__item-half-title"> Выберите размер:</div>
-                          <div class="it-base-steps__select-wrap">
-                            <select class="it-base-steps__select" name="size" required="">
-                              <option value="15 x 22" selected="" data-calc-size="76">15 x 22</option>
-                              <option value="40 x 60" data-calc-size="240">40 x 60</option>
-                              <option value="70 x 105" data-calc-size="441">70 x 105</option>
-                              <option value="90 x 135" data-calc-size="608">90x 135</option>
-                              <option value="100x 150" data-calc-size="600">100x 150</option>
-                              <option value="150 x 225" data-calc-size="1350 ">150 x 225</option>
-                              <option value="200 x 300" data-calc-size="2400">200 x 300</option>
-                            </select>
+                  <div class="it-configurator__inner-wrap">
+                    <div class="it-configurator__half it-configurator__half--left">
+                      <div class="it-configurator__inner-half it-configurator__inner-half--left">
+                        <div class="it-slider">
+                          <div class="it-slider__top">
+                            <div class="it-slider__img-wrap"><img class="it-slider__img" src="" alt=""></div>
                           </div>
-                        </div>
-                        <div class="it-base-steps__item-half it-base-steps__item-half--size1">
-                          <div class="it-base-steps__item-half-title"> Количество:</div>
-                          <div class="it-base-steps__input-inner-wrap">
-                            <div class="it-base-steps__input-sign" data-sign-minus="data-sign-minus">-</div>
-                            <input class="it-base-steps__input-sign it-base-steps__input-quantity" name="amount" value="1" data-sign-value="data-sign-value">
-                            <div class="it-base-steps__input-sign" data-sign-plus="data-sign-plus">+</div>
-                          </div>
-                        </div>
-                        <div class="it-base-steps__item-half">
-                          <div class="it-base-steps__item-half-title"> Выберите исполнение:</div>
-                          <div class="it-base-steps__select-wrap">
-                            <select class="it-base-steps__select" name="print" required="">
-                              <option value="Односторонняя печать" selected="" data-calc-print="1">Односторонняя печать</option>
-                              <option value="Двухсторонняя печать" data-calc-print="2">Двухсторонняя печать</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="it-base-steps__item-half it-base-steps__item-half-file">
-                          <div class="it-base-steps__item-half-title"> Загрузите логотип:</div>
-                          <label class="it-callback__file-label it-base-steps__file-label">
-                            <input class="it-callback__file" id="add_file" name="file" type="file" data-file-default="data-file-default" accept="image/jpeg,image/png,image/gif"><span class="it-callback__file-title it-base-steps__file-title it-btn it-btn--transparent">Прикрепить</span>
-                            <div class="it-callback__file-name" data-file-name=""></div>
-                          </label>
-                        </div>
-                        <div class="it-validate-error">Заполните поля</div>
-                      </div>
-                    </li>
-                    <li class="it-base-steps__inner-item it-base-steps__inner-item--ov-visible" data-it-calculation-item="2">
-                      <div class="it-base-steps__item-wrap it-base-steps__item-wrap--ov-visible">
-                        <div class="it-base-steps__item-half it-base-steps__item-half--size2">
-                          <div class="it-base-steps__item-half-title it-base-steps__item-half-title--indent">Прошив флага по краю<br>(+10% к стоимости)
-                            <div class="it-base-steps__item-title-prompt"><img class="it-base-steps__item-title-prompt-img" src="&lt;?php echo get_template_directory_uri(); ?&gt;/img/flagi/base-steps/2.png" alt="">
-                              <div class="it-base-steps__item-prompt-popup">
-                                По периметру флаг
-                                обрабатывается двойной
-                                строчкой. Используется
-                                для увеличения срока
-                                службы флага.
-                              </div>
-                            </div>
-                          </div>
-                          <div class="it-base-steps__select-wrap it-base-steps__select-wrap--size">
-                            <select class="it-base-steps__select it-base-steps__select--size" name="sewing" required="">
-                              <option value="Да" selected="" data-calc-sewing-area="1">Да</option>
-                              <option value="Нет" data-calc-sewing-area="0">Нет</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="it-base-steps__item-half it-base-steps__item-half--size3">
-                          <div class="it-base-steps__item-half-title it-base-steps__item-half-title--indent">Способ крепления<br> древка (пластик)
-                            <div class="it-base-steps__item-title-prompt"><img class="it-base-steps__item-title-prompt-img" src="&lt;?php echo get_template_directory_uri(); ?&gt;/img/flagi/base-steps/2.png" alt="">
-                              <div class="it-base-steps__item-prompt-popup">
-                                Шест, изготовленный из
-                                пластика, на него
-                                закрепляется флаг.
-                              </div>
-                            </div>
-                          </div>
-                          <div class="it-base-steps__select-wrap">
-                            <select class="it-base-steps__select" name="bracing" required="">
-                              <option value="По высоте" selected="">По высоте</option>
-                              <option value="По ширине">По ширине</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="it-base-steps__item-half it-base-steps__item-half--size4">
-                          <div class="it-base-steps__item-half-title it-base-steps__item-half-title--indent">Услуги дизайнера:
-                            <!--
-                            <div class="it-base-steps__item-title-prompt">
-                            <img class="it-base-steps__item-title-prompt-img"
-                            src="<?php /*echo get_template_directory_uri(); */?>/img/flagi/base-steps/2.png"
-                            alt="" />
-                            <div class="it-base-steps__item-prompt-popup">По периметру флаг
-                            обрабатывается двойной
-                            строчкой. Используется
-                            для увеличения срока
-                            службы флага.
-                            </div>
-                            </div>
-                            -->
-                          </div>
-                          <div class="it-base-steps__select-wrap">
-                            <select class="it-base-steps__select" name="designer" required="">
-                              <option value="У меня есть логотип/макет в векторе" selected="" data-calc-designer="0">У меня есть логотип/макет в векторе</option>
-                              <option value="Разработка логотипа/макета с нуля (до 3 вариантов)" data-calc-designer="1500">
-                                Разработка логотипа/макета с нуля
-                                (до 3 вариантов)
-                              </option>
-                            </select>
+                          <div class="it-slider__bottom">
+                            <div class="it-slider__img-wrap it-slider__img-wrap--min"><img class="it-slider__img it-slider__img--min" src="" alt=""></div>
+                            <div class="it-slider__img-wrap it-slider__img-wrap--min"><img class="it-slider__img it-slider__img--min" src="" alt=""></div>
                           </div>
                         </div>
                       </div>
-                    </li>
-                    <li class="it-base-steps__inner-item" data-it-calculation-item="3">
-                      <div class="it-base-steps__inner-item-top">
-                        <div class="it-base-steps__item-half it-base-steps__item-half--size5">
-                          <div class="it-base-steps__item-half-title"> Внесите ваши контакты:</div>
-                          <input class="it-base-steps__input" type="text" name="NAME" maxlength="200" value="" placeholder="Ваше имя" required="required">
-                          <input class="it-base-steps__input" type="tel" name="PHONE" maxlength="200" value="" placeholder="Ваш телефон" data-phone="true" required="required" data-mask="phone">
-                        </div>
-                        <div class="it-base-steps__item-half">
-                          <div class="it-base-steps__item-half-title"> Стоимость вашего заказа:</div>
-                          <div class="it-base-steps__sum"><span class="it-base-steps__sum-number" data-calc-sum="data-calc-sum"> 0</span> руб.
-                            <input type="hidden" name="order_cost" data-calc-sum="data-calc-sum" value="0 руб.">
-                          </div>
+                      <div class="it-configurator__inner-half it-configurator__inner-half--right">
+                        <div class="it-configurator__character-title"><span class="it-configurator__character-title-text">   Основные характеристики</span><span class="it-configurator__character-title-text">   Добавьте оборудование для модели</span><span class="it-configurator__character-title-name">КРЕЧЕТ Z 320-91:</span></div>
+                        <ul class="it-configurator__list">
+                          <li class="it-configurator__list-item"><span class="it-configurator__list-item-key">   Мощность</span><span class="it-configurator__list-item-value">   100 л.с.</span></li>
+                          <li class="it-configurator__list-item"><span class="it-configurator__list-item-key">   Масса</span><span class="it-configurator__list-item-value">   2675 кг.</span></li>
+                          <li class="it-configurator__list-item"><span class="it-configurator__list-item-key">   Грузоподъемность</span><span class="it-configurator__list-item-value">   1325 кг.</span></li>
+                          <li class="it-configurator__list-item"><span class="it-configurator__list-item-key">   Макс. объем топлива</span><span class="it-configurator__list-item-value">   200 л.</span></li>
+                          <li class="it-configurator__list-item"><span class="it-configurator__list-item-key">   Пассажирских мест</span><span class="it-configurator__list-item-value">   3</span></li>
+                          <li class="it-configurator__list-item"><span class="it-configurator__list-item-key">   Пассажирских мест</span><span class="it-configurator__list-item-value">   3</span></li>
+                          <li class="it-configurator__list-item"><span class="it-configurator__list-item-key">   Пассажирских мест</span><span class="it-configurator__list-item-value">   445</span></li>
+                          <li class="it-configurator__list-item"><span class="it-configurator__list-item-key">   Пассажирских мест</span><span class="it-configurator__list-item-value">   345</span></li>
+                        </ul>
+                        <div class="it-configurator__price"><span class="it-configurator__price-text">от</span><span class="it-configurator__price-number">   5 900 000</span><span class="it-configurator__price-text">руб</span>
+                          <div class="it-configurator__price-comment">   Стоимость без дополнительного оборудования</div>
                         </div>
                       </div>
-                      <div class="it-base-steps__inner-item-bottom">
-                        <textarea class="it-base-steps__textarea" name="COMMENT" placeholder="Комментарий" maxlength="1000"></textarea>
-                        <div class="it-base-steps__checkbox-wrap it-base-steps__checkbox-wrap--indent">
-                          <label class="it-checkbox it-base-steps__checkbox--size">
-                            <input class="it-base-steps__checkbox-default" type="checkbox" name="AGREE" checked="checked"><span class="it-base-steps__checkbox-pseudo"></span><span class="it-base-steps__checkbox-text it-base-steps__checkbox-text--color">   Подтверждаю свое согласие на обработку персональных данных</span>
+                      <div class="it-configurator__inner-bottom">
+                        <div class="it-configurator__inner-bottom-facts">Интересные факты: мощность мотора вездехода «КРЕЧЕТ» сопоставима с мощностью танка БТ-7. Вездеход имеет клиренс 600 мм и углы въезда/съезда по 52°</div>
+                        <div class="it-configurator__inner-print"><a class="it-configurator__inner-print-link" href="#"></a>Вывести подбор параметров в pdf</div>
+                      </div>
+                    </div>
+                    <div class="it-configurator__half it-configurator__half--right">
+                      <div class="it-configurator__inner-top">
+                        <ul class="it-configurator__checkbox-list">
+                          <li class="it-configurator__checkbox-item">
+                            <div class="it-configurator__checkbox-wrap">
+                              <label class="it-checkbox it-configurator__checkbox--size">
+                                <input class="it-configurator__checkbox-default" type="checkbox" name="AGREE" checked="checked"><span class="it-configurator__checkbox-pseudo"></span><span class="it-configurator__checkbox-text it-configurator__checkbox-text--color">   КРЕЧЕТ Z 210-91</span>
+                              </label>
+                            </div>
+                          </li>
+                          <li class="it-configurator__checkbox-item">
+                            <div class="it-configurator__checkbox-wrap">
+                              <label class="it-checkbox it-configurator__checkbox--size">
+                                <input class="it-configurator__checkbox-default" type="checkbox" name="AGREE" checked="checked"><span class="it-configurator__checkbox-pseudo"></span><span class="it-configurator__checkbox-text it-configurator__checkbox-text--color">   КРЕЧЕТ Z 320-91</span>
+                              </label>
+                            </div>
+                          </li>
+                          <li class="it-configurator__checkbox-item">
+                            <div class="it-configurator__checkbox-wrap">
+                              <label class="it-checkbox it-configurator__checkbox--size">
+                                <input class="it-configurator__checkbox-default" type="checkbox" name="AGREE" checked="checked"><span class="it-configurator__checkbox-pseudo"></span><span class="it-configurator__checkbox-text it-configurator__checkbox-text--color">   КРЕЧЕТ Z 310-91</span>
+                              </label>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="it-configurator__inner-center">
+                        <div class="it-configurator__prepayment">
+                          <div class="it-configurator__prepayment-title">	Выберите размер предоплаты</div>
+                          <label class="it-configurator__prepayment-number">
+                            <input class="it-configurator__checkbox-default" type="checkbox" name="AGREE" checked="checked"><span class="it-configurator__checkbox-pseudo"></span><span class="it-configurator__checkbox-text it-configurator__checkbox-text--color">   КРЕЧЕТ Z 310-91</span>
                           </label>
                         </div>
                       </div>
-                    </li>
-                  </ul>
-                  <div class="it-base-steps__buttons">
-                    <button class="it-btn it-base-steps__btn it-base-steps__btn--prev" type="button" data-it-btn="prev">Назад</button>
-                    <button class="it-btn it-base-steps__btn it-base-steps__btn--next it-btn--arrow active" type="button" data-it-btn="next">Далее</button>
-                    <button class="it-btn it-base-steps__btn it-base-steps__btn--send" type="submit" data-it-btn="send">Отправить</button>
+                      <div class="it-configurator__inner-bottom">
+                        <div class="it-configurator__move-wrap">
+                          <div class="it-configurator__move-top">
+                            <div class="it-configurator__move-half"><img class="it-configurator__move-half--arrow" src="" alt=""></div>
+                            <div class="it-configurator__move-half">
+                              <div class="it-configurator__move-dot"></div>
+                            </div>
+                            <div class="it-configurator__move-half">
+                              <div class="it-configurator__move-dot"></div>
+                            </div>
+                            <div class="it-configurator__move-half">
+                              <div class="it-configurator__move-dot"></div>
+                            </div>
+                            <div class="it-configurator__move-half"><img class="it-configurator__move-half--arrow" src="" alt=""></div>
+                          </div>
+                          <div class="it-configurator__move-bottom">
+                            <div class="it-configurator__move-buttons">
+                              <button class="it-btn it-configurator__btn it-configurator__btn--prev" type="button" data-it-btn="prev">Перейти к следующему шагу</button>
+                              <button class="it-btn it-configurator__btn it-configurator__btn--next it-btn--arrow active" type="button" data-it-btn="next">Перейти к следующему шагу</button>
+                              <button class="it-btn it-configurator__btn it-configurator__btn--send" type="submit" data-it-btn="send">Вернуться назад</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="it-form__success">
-                    <p>Спасибо!</p>
-                    <p>Ваша заявка принята</p>
-                  </div>
-                  <input type="hidden" value="&lt;?= $page_path ?&gt;" name="FORM_PATH">
-                  <input type="hidden" value="flags_calculator" name="FORM_TYPE">
-                  <input type="hidden" value="калькулятор на расчёт стоимости изготовления" name="FORM_NAME">
-                </form>
+                </div>
               </div>
             </div>
           </div>
