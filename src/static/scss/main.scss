@@ -94,14 +94,14 @@
 
 /******************* calc *******************/
 
-@import 'topgas-calc/calc';
+@import 'krechet_configurator/conf';
 
 
 
 /******************* it-all-style *******************/
 
 .it-container {
-   max-width: 892px;
+   max-width: 1170px;
    width: 100%;
    padding: 0 15px;
    margin: 0 auto;
@@ -268,13 +268,14 @@
   border: none;
   padding: 11.5px 10px;
   font-size: 14px;
-  transition: all 0.2s ease-in-out;
+  transition: 0.3s ease all;
   background-color: $main-color;
   color: #ffffff;
   cursor: pointer;
   text-decoration: none;
   position: relative;
   text-transform: uppercase;
+  outline: none;
 }
 
 .it-btn:hover {
@@ -285,7 +286,7 @@
 .it-btn:active,
 .it-btn:visited {
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
 }
 
 .it-btn--transparent {
