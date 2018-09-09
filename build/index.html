@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="static/css/main.css">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <div class="it-main-page__wrapper">
@@ -17,118 +18,276 @@
         <section class="it-configurator it-all--indent" id="it-configurator">
           <div class="it-container">
             <div class="it-configurator__wrap">
-              <div class="it-configurator__title" data-calculation-title="data-calculation-title"><b>Калькулятор:</b> рассчитайте стоимость изготовления</div>
-              <div class="it-configurator__step-wrap">
-                <div class="it-configurator__step-inner-wrap">
-                  <div class="it-configurator__step-number"> 1</div>
-                  <div class="it-configurator__step-text active" data-calculation-text="1">Выберите модель</div>
-                </div>
-                <div class="it-configurator__step-inner-wrap">
-                  <div class="it-configurator__step-number"> 2</div>
-                  <div class="it-configurator__step-text" data-calculation-text="2">Добавьте оборудование</div>
-                </div>
-                <div class="it-configurator__step-inner-wrap it-configurator__step-inner-wrap--size">
-                  <div class="it-configurator__step-number"> 3</div>
-                  <div class="it-configurator__step-text" data-calculation-text="3">Отправьте заявку</div>
-                  <input type="hidden" name="name" value="">
-                  <input type="hidden" name="phone" value="">
-                  <input type="hidden" name="message" value="">
+              <div class="it-configurator__title" data-calculation-title="data-calculation-title">	Калькулятор вездехода</div>
+              <div class="it-configurator__subtitle">	Рассчитайте стоимость изготовления вездехода по вашим параметрам. Мы сможем выполнить<br>	разработку, предназначенную для эксплуатации в любых условиях.</div>
+              <div class="it-configurator__step-outer-wrap">
+                <ul class="it-configurator__step-wrap">
+                  <li class="it-configurator__step-item active">
+                    <div class="it-configurator__step-link it-btn"><span class="it-configurator__step-number"> 1</span><span class="it-configurator__step-text" data-calculation-text="1">Выберите модель</span></div>
+                  </li>
+                  <li class="it-configurator__step-item">
+                    <div class="it-configurator__step-link it-btn"><span class="it-configurator__step-number"> 2</span><span class="it-configurator__step-text" data-calculation-text="2">Добавьте оборудование</span></div>
+                  </li>
+                  <li class="it-configurator__step-item">
+                    <div class="it-configurator__step-link it-btn"><span class="it-configurator__step-number"> 3</span><span class="it-configurator__step-text" data-calculation-text="3">Отправьте заявку</span></div>
+                  </li>
+                </ul>
+              </div>
+              <div class="it-configurator__inner-wrapper">
+                <div class="it-configurator__half it-configurator__half--left">
                   <div class="it-configurator__inner-wrap">
-                    <div class="it-configurator__half it-configurator__half--left">
-                      <div class="it-configurator__inner-half it-configurator__inner-half--left">
-                        <div class="it-slider">
-                          <div class="it-slider__top">
-                            <div class="it-slider__img-wrap"><img class="it-slider__img" src="" alt=""></div>
-                          </div>
-                          <div class="it-slider__bottom">
-                            <div class="it-slider__img-wrap it-slider__img-wrap--min"><img class="it-slider__img it-slider__img--min" src="" alt=""></div>
-                            <div class="it-slider__img-wrap it-slider__img-wrap--min"><img class="it-slider__img it-slider__img--min" src="" alt=""></div>
-                          </div>
+                    <div class="it-configurator__inner-half it-configurator__inner-half--left">
+                      <div class="it-slider">
+                        <div class="it-slider__top">
+                          <div class="it-slider__img-wrap"><img class="it-slider__img" src="static/img/krechet_configurator/slider/1.jpg" alt=""></div>
                         </div>
-                      </div>
-                      <div class="it-configurator__inner-half it-configurator__inner-half--right">
-                        <div class="it-configurator__character-title"><span class="it-configurator__character-title-text">   Основные характеристики</span><span class="it-configurator__character-title-text">   Добавьте оборудование для модели</span><span class="it-configurator__character-title-name">КРЕЧЕТ Z 320-91:</span></div>
-                        <ul class="it-configurator__list">
-                          <li class="it-configurator__list-item"><span class="it-configurator__list-item-key">   Мощность</span><span class="it-configurator__list-item-value">   100 л.с.</span></li>
-                          <li class="it-configurator__list-item"><span class="it-configurator__list-item-key">   Масса</span><span class="it-configurator__list-item-value">   2675 кг.</span></li>
-                          <li class="it-configurator__list-item"><span class="it-configurator__list-item-key">   Грузоподъемность</span><span class="it-configurator__list-item-value">   1325 кг.</span></li>
-                          <li class="it-configurator__list-item"><span class="it-configurator__list-item-key">   Макс. объем топлива</span><span class="it-configurator__list-item-value">   200 л.</span></li>
-                          <li class="it-configurator__list-item"><span class="it-configurator__list-item-key">   Пассажирских мест</span><span class="it-configurator__list-item-value">   3</span></li>
-                          <li class="it-configurator__list-item"><span class="it-configurator__list-item-key">   Пассажирских мест</span><span class="it-configurator__list-item-value">   3</span></li>
-                          <li class="it-configurator__list-item"><span class="it-configurator__list-item-key">   Пассажирских мест</span><span class="it-configurator__list-item-value">   445</span></li>
-                          <li class="it-configurator__list-item"><span class="it-configurator__list-item-key">   Пассажирских мест</span><span class="it-configurator__list-item-value">   345</span></li>
-                        </ul>
-                        <div class="it-configurator__price"><span class="it-configurator__price-text">от</span><span class="it-configurator__price-number">   5 900 000</span><span class="it-configurator__price-text">руб</span>
-                          <div class="it-configurator__price-comment">   Стоимость без дополнительного оборудования</div>
+                        <div class="it-slider__bottom">
+                          <div class="it-slider__img-wrap it-slider__img-wrap--min"><img class="it-slider__img it-slider__img--min" src="static/img/krechet_configurator/slider/2.jpg" alt=""></div>
+                          <div class="it-slider__img-wrap it-slider__img-wrap--min"><img class="it-slider__img it-slider__img--min" src="static/img/krechet_configurator/slider/3.jpg" alt=""></div>
                         </div>
-                      </div>
-                      <div class="it-configurator__inner-bottom">
-                        <div class="it-configurator__inner-bottom-facts">Интересные факты: мощность мотора вездехода «КРЕЧЕТ» сопоставима с мощностью танка БТ-7. Вездеход имеет клиренс 600 мм и углы въезда/съезда по 52°</div>
-                        <div class="it-configurator__inner-print"><a class="it-configurator__inner-print-link" href="#"></a>Вывести подбор параметров в pdf</div>
                       </div>
                     </div>
-                    <div class="it-configurator__half it-configurator__half--right">
-                      <div class="it-configurator__inner-top">
-                        <ul class="it-configurator__checkbox-list">
-                          <li class="it-configurator__checkbox-item">
-                            <div class="it-configurator__checkbox-wrap">
-                              <label class="it-checkbox it-configurator__checkbox--size">
-                                <input class="it-configurator__checkbox-default" type="checkbox" name="AGREE" checked="checked"><span class="it-configurator__checkbox-pseudo"></span><span class="it-configurator__checkbox-text it-configurator__checkbox-text--color">   КРЕЧЕТ Z 210-91</span>
-                              </label>
-                            </div>
-                          </li>
-                          <li class="it-configurator__checkbox-item">
-                            <div class="it-configurator__checkbox-wrap">
-                              <label class="it-checkbox it-configurator__checkbox--size">
-                                <input class="it-configurator__checkbox-default" type="checkbox" name="AGREE" checked="checked"><span class="it-configurator__checkbox-pseudo"></span><span class="it-configurator__checkbox-text it-configurator__checkbox-text--color">   КРЕЧЕТ Z 320-91</span>
-                              </label>
-                            </div>
-                          </li>
-                          <li class="it-configurator__checkbox-item">
-                            <div class="it-configurator__checkbox-wrap">
-                              <label class="it-checkbox it-configurator__checkbox--size">
-                                <input class="it-configurator__checkbox-default" type="checkbox" name="AGREE" checked="checked"><span class="it-configurator__checkbox-pseudo"></span><span class="it-configurator__checkbox-text it-configurator__checkbox-text--color">   КРЕЧЕТ Z 310-91</span>
-                              </label>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="it-configurator__inner-center">
-                        <div class="it-configurator__prepayment">
-                          <div class="it-configurator__prepayment-title">	Выберите размер предоплаты</div>
-                          <label class="it-configurator__prepayment-number">
-                            <input class="it-configurator__checkbox-default" type="checkbox" name="AGREE" checked="checked"><span class="it-configurator__checkbox-pseudo"></span><span class="it-configurator__checkbox-text it-configurator__checkbox-text--color">   КРЕЧЕТ Z 310-91</span>
+                    <div class="it-configurator__inner-half it-configurator__inner-half--right">
+                      <div class="it-configurator__character-title"><span class="it-configurator__character-title-text">   Основные характеристики</span><span class="it-configurator__character-title-text it--hide">   Добавьте оборудование для модели</span><span class="it-configurator__character-title-name">КРЕЧЕТ Z 320-91:</span></div>
+                      <ul class="it-configurator__list">
+                        <li class="it-configurator__list-item"><span class="it-configurator__list-item-key">   Мощность</span><span class="it-configurator__list-item-value">   100 л.с.</span></li>
+                        <li class="it-configurator__list-item"><span class="it-configurator__list-item-key">   Масса</span><span class="it-configurator__list-item-value">   2675 кг.</span></li>
+                        <li class="it-configurator__list-item"><span class="it-configurator__list-item-key">   Грузоподъемность</span><span class="it-configurator__list-item-value">   1325 кг.</span></li>
+                        <li class="it-configurator__list-item"><span class="it-configurator__list-item-key">   Макс. объем топлива</span><span class="it-configurator__list-item-value">   200 л.</span></li>
+                        <li class="it-configurator__list-item"><span class="it-configurator__list-item-key">   Пассажирских мест</span><span class="it-configurator__list-item-value">   3</span></li>
+                      </ul>
+                      <div class="it-configurator__price"><span class="it-configurator__price-text">от</span><span class="it-configurator__price-number">   5 900 000</span><span class="it-configurator__price-text">руб</span></div>
+                      <div class="it-configurator__price-comment">   Стоимость без дополнительного оборудования</div>
+                    </div>
+                  </div>
+                  <div class="it-configurator__inner-bottom">
+                    <div class="it-configurator__inner-bottom-facts"><b>Интересные факты:</b>	мощность мотора вездехода «КРЕЧЕТ» сопоставима с мощностью танка БТ-7. Вездеход имеет клиренс 600 мм и углы въезда/съезда по 52°</div>
+                    <div class="it-configurator__inner-print it--hide"><a class="it-configurator__inner-print-link" href="#"></a>Вывести подбор параметров в pdf</div>
+                  </div>
+                </div>
+                <div class="it-configurator__half it-configurator__half--right">
+                  <div class="it-configurator__inner-top">
+                    <ul class="it-configurator__checkbox-list">
+                      <li class="it-configurator__checkbox-item active">
+                        <div class="it-checkbox-wrap">
+                          <label class="it-checkbox it-checkbox--indent">
+                            <input class="it-checkbox__default" type="radio" name="model" checked><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   КРЕЧЕТ Z 210-91</span>
                           </label>
                         </div>
+                      </li>
+                      <li class="it-configurator__checkbox-item">
+                        <div class="it-checkbox-wrap">
+                          <label class="it-checkbox it-checkbox--indent">
+                            <input class="it-checkbox__default" type="radio" name="model"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   КРЕЧЕТ Z 320-91</span>
+                          </label>
+                        </div>
+                      </li>
+                      <li class="it-configurator__checkbox-item">
+                        <div class="it-checkbox-wrap">
+                          <label class="it-checkbox it-checkbox--indent">
+                            <input class="it-checkbox__default" type="radio" name="model"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   КРЕЧЕТ Z 310-91</span>
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="it-configurator__inner-center">
+                    <div class="it-configurator__prepayment">
+                      <div class="it-configurator__prepayment-title">	Выберите размер предоплаты</div>
+                      <ul class="it-configurator__prepayment-checkbox-list">
+                        <li class="it-configurator__prepayment-checkbox-item active">
+                          <label class="it-checkbox-prepayment">
+                            <input class="it-checkbox-prepayment__default" type="radio" name="prepayment" checked="checked" value="100"><span class="it-checkbox-prepayment__pseudo"></span><span class="it-checkbox-prepayment__text">   100%</span>
+                          </label>
+                        </li>
+                        <li class="it-configurator__prepayment-checkbox-item">
+                          <label class="it-checkbox-prepayment">
+                            <input class="it-checkbox-prepayment__default" type="radio" name="prepayment" value="70"><span class="it-checkbox-prepayment__pseudo"></span><span class="it-checkbox-prepayment__text">   70%</span>
+                          </label>
+                        </li>
+                        <li class="it-configurator__prepayment-checkbox-item">
+                          <label class="it-checkbox-prepayment">
+                            <input class="it-checkbox-prepayment__default" type="radio" name="prepayment" value="50"><span class="it-checkbox-prepayment__pseudo"></span><span class="it-checkbox-prepayment__text">   50%</span>
+                          </label>
+                        </li>
+                        <li class="it-configurator__prepayment-checkbox-item">
+                          <label class="it-checkbox-prepayment">
+                            <input class="it-checkbox-prepayment__default" type="radio" name="prepayment" value="0"><span class="it-checkbox-prepayment__pseudo"></span><span class="it-checkbox-prepayment__text">   0%</span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="it-configurator__inner-bottom">
+                    <div class="it-configurator__move-wrap">
+                      <div class="it-configurator__move-top">
+                        <div class="it-configurator__move-half"><img class="it-configurator__move-half--arrow" src="static/img/krechet_configurator/move/arrow-prev.svg" alt=""></div>
+                        <div class="it-configurator__move-half">
+                          <div class="it-configurator__move-dot"></div>
+                        </div>
+                        <div class="it-configurator__move-half">
+                          <div class="it-configurator__move-dot"></div>
+                        </div>
+                        <div class="it-configurator__move-half">
+                          <div class="it-configurator__move-dot"></div>
+                        </div>
+                        <div class="it-configurator__move-half"><img class="it-configurator__move-half--arrow" src="static/img/krechet_configurator/move/arrow-next.svg" alt=""></div>
                       </div>
-                      <div class="it-configurator__inner-bottom">
-                        <div class="it-configurator__move-wrap">
-                          <div class="it-configurator__move-top">
-                            <div class="it-configurator__move-half"><img class="it-configurator__move-half--arrow" src="" alt=""></div>
-                            <div class="it-configurator__move-half">
-                              <div class="it-configurator__move-dot"></div>
-                            </div>
-                            <div class="it-configurator__move-half">
-                              <div class="it-configurator__move-dot"></div>
-                            </div>
-                            <div class="it-configurator__move-half">
-                              <div class="it-configurator__move-dot"></div>
-                            </div>
-                            <div class="it-configurator__move-half"><img class="it-configurator__move-half--arrow" src="" alt=""></div>
-                          </div>
-                          <div class="it-configurator__move-bottom">
-                            <div class="it-configurator__move-buttons">
-                              <button class="it-btn it-configurator__btn it-configurator__btn--prev" type="button" data-it-btn="prev">Перейти к следующему шагу</button>
-                              <button class="it-btn it-configurator__btn it-configurator__btn--next it-btn--arrow active" type="button" data-it-btn="next">Перейти к следующему шагу</button>
-                              <button class="it-btn it-configurator__btn it-configurator__btn--send" type="submit" data-it-btn="send">Вернуться назад</button>
-                            </div>
-                          </div>
+                      <div class="it-configurator__move-bottom">
+                        <div class="it-configurator__move-buttons">
+                          <button class="it-btn it-btn--transparent it-configurator__btn" type="button" data-it-btn="next">Перейти к следующему шагу</button>
+                          <button class="it-btn it-btn--transparent it-configurator__btn" type="submit" data-it-btn="send">Вернуться назад</button>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+        <section class="it-configurator-options__modal">
+          <div class="it-container">
+            <div class="it-configurator-options__wrap">
+              <div class="it-configurator-options__title-wrap">
+                <div class="it-configurator-options__title-half it-configurator-options__title-half--left">
+                  <div class="it-configurator-options__title">	ПОЛНЫЙ СПИСОК</div>
+                  <div class="it-configurator-options__subtitle">	ДОПОЛНИТЕЛЬНЫХ ПАРАМЕТРОВ</div>
+                </div>
+                <div class="it-configurator-options__title-half it-configurator-options__title-half--right">
+                  <div class="it-configurator-options__subtitle">	ДЛЯ МОДЕЛИ «КРЕЧЕТ» Z-320 91</div>
+                </div>
+              </div>
+              <ul class="it-configurator-options__list">
+                <li class="it-configurator-options__item">
+                  <ul class="it-configurator-options__inner-list">
+                    <li class="it-configurator-options__inner-item">
+                      <label class="it-checkbox-options">
+                        <input class="it-checkbox-options__default" type="checkbox" name="options"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Диск c шиной 1300x700-21" (Арктиктранс)</span>
+                      </label>
+                    </li>
+                    <li class="it-configurator-options__inner-item">
+                      <label class="it-checkbox-options">
+                        <input class="it-checkbox-options__default" type="checkbox" name="options"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Диск c шиной 1300x700-21" (Арктиктранс)</span>
+                      </label>
+                    </li>
+                    <li class="it-configurator-options__inner-item">
+                      <label class="it-checkbox-options">
+                        <input class="it-checkbox-options__default" type="checkbox" name="options"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Диск c шиной 1300x700-21" (Арктиктранс)</span>
+                      </label>
+                    </li>
+                    <li class="it-configurator-options__inner-item">
+                      <label class="it-checkbox-options">
+                        <input class="it-checkbox-options__default" type="checkbox" name="options"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Диск c шиной 1300x700-21" (Арктиктранс)</span>
+                      </label>
+                    </li>
+                    <li class="it-configurator-options__inner-item">
+                      <label class="it-checkbox-options">
+                        <input class="it-checkbox-options__default" type="checkbox" name="options"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Диск c шиной 1300x700-21" (Арктиктранс)</span>
+                      </label>
+                    </li>
+                    <li class="it-configurator-options__inner-item">
+                      <label class="it-checkbox-options">
+                        <input class="it-checkbox-options__default" type="checkbox" name="options"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Диск c шиной 1300x700-21" (Арктиктранс)</span>
+                      </label>
+                    </li>
+                    <li class="it-configurator-options__inner-item">
+                      <label class="it-checkbox-options">
+                        <input class="it-checkbox-options__default" type="checkbox" name="options"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Диск c шиной 1300x700-21" (Арктиктранс)</span>
+                      </label>
+                    </li>
+                    <li class="it-configurator-options__inner-item">
+                      <label class="it-checkbox-options">
+                        <input class="it-checkbox-options__default" type="checkbox" name="options"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Диск c шиной 1300x700-21" (Арктиктранс)</span>
+                      </label>
+                    </li>
+                    <li class="it-configurator-options__inner-item">
+                      <label class="it-checkbox-options">
+                        <input class="it-checkbox-options__default" type="checkbox" name="options"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Диск c шиной 1300x700-21" (Арктиктранс)</span>
+                      </label>
+                    </li>
+                    <li class="it-configurator-options__inner-item">
+                      <label class="it-checkbox-options">
+                        <input class="it-checkbox-options__default" type="checkbox" name="options"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Диск c шиной 1300x700-21" (Арктиктранс)</span>
+                      </label>
+                    </li>
+                    <li class="it-configurator-options__inner-item">
+                      <label class="it-checkbox-options">
+                        <input class="it-checkbox-options__default" type="checkbox" name="options"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Диск c шиной 1300x700-21" (Арктиктранс)</span>
+                      </label>
+                    </li>
+                    <li class="it-configurator-options__inner-item">
+                      <label class="it-checkbox-options">
+                        <input class="it-checkbox-options__default" type="checkbox" name="options"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Диск c шиной 1300x700-21" (Арктиктранс)</span>
+                      </label>
+                    </li>
+                  </ul>
+                </li>
+                <li class="it-configurator-options__item">
+                  <ul class="it-configurator-options__inner-list">
+                    <li class="it-configurator-options__inner-item">
+                      <label class="it-checkbox-options">
+                        <input class="it-checkbox-options__default" type="checkbox" name="options"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Диск c шиной 1300x700-21" (Арктиктранс)</span>
+                      </label>
+                    </li>
+                    <li class="it-configurator-options__inner-item">
+                      <label class="it-checkbox-options">
+                        <input class="it-checkbox-options__default" type="checkbox" name="options"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Диск c шиной 1300x700-21" (Арктиктранс)</span>
+                      </label>
+                    </li>
+                    <li class="it-configurator-options__inner-item">
+                      <label class="it-checkbox-options">
+                        <input class="it-checkbox-options__default" type="checkbox" name="options"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Диск c шиной 1300x700-21" (Арктиктранс)</span>
+                      </label>
+                    </li>
+                    <li class="it-configurator-options__inner-item">
+                      <label class="it-checkbox-options">
+                        <input class="it-checkbox-options__default" type="checkbox" name="options"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Диск c шиной 1300x700-21" (Арктиктранс)</span>
+                      </label>
+                    </li>
+                    <li class="it-configurator-options__inner-item">
+                      <label class="it-checkbox-options">
+                        <input class="it-checkbox-options__default" type="checkbox" name="options"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Диск c шиной 1300x700-21" (Арктиктранс)</span>
+                      </label>
+                    </li>
+                    <li class="it-configurator-options__inner-item">
+                      <label class="it-checkbox-options">
+                        <input class="it-checkbox-options__default" type="checkbox" name="options"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Диск c шиной 1300x700-21" (Арктиктранс)</span>
+                      </label>
+                    </li>
+                    <li class="it-configurator-options__inner-item">
+                      <label class="it-checkbox-options">
+                        <input class="it-checkbox-options__default" type="checkbox" name="options"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Диск c шиной 1300x700-21" (Арктиктранс)</span>
+                      </label>
+                    </li>
+                    <li class="it-configurator-options__inner-item">
+                      <label class="it-checkbox-options">
+                        <input class="it-checkbox-options__default" type="checkbox" name="options"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Диск c шиной 1300x700-21" (Арктиктранс)</span>
+                      </label>
+                    </li>
+                    <li class="it-configurator-options__inner-item">
+                      <label class="it-checkbox-options">
+                        <input class="it-checkbox-options__default" type="checkbox" name="options"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Диск c шиной 1300x700-21" (Арктиктранс)</span>
+                      </label>
+                    </li>
+                    <li class="it-configurator-options__inner-item">
+                      <label class="it-checkbox-options">
+                        <input class="it-checkbox-options__default" type="checkbox" name="options"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Диск c шиной 1300x700-21" (Арктиктранс)</span>
+                      </label>
+                    </li>
+                    <li class="it-configurator-options__inner-item">
+                      <label class="it-checkbox-options">
+                        <input class="it-checkbox-options__default" type="checkbox" name="options"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Диск c шиной 1300x700-21" (Арктиктранс)</span>
+                      </label>
+                    </li>
+                    <li class="it-configurator-options__inner-item">
+                      <label class="it-checkbox-options">
+                        <input class="it-checkbox-options__default" type="checkbox" name="options"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Диск c шиной 1300x700-21" (Арктиктранс)</span>
+                      </label>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </div>
           </div>
         </section>

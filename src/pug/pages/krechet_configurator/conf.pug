@@ -2,148 +2,154 @@ section#it-configurator.it-configurator.it-all--indent
 	.it-container
 		.it-configurator__wrap
 			.it-configurator__title(data-calculation-title='data-calculation-title')
-				b
-					| Калькулятор:
-				|  рассчитайте стоимость изготовления
-			.it-configurator__step-wrap
-				.it-configurator__step-inner-wrap
-					.it-configurator__step-number  1
-					.it-configurator__step-text.active(data-calculation-text='1')
-						| Выберите модель
-				.it-configurator__step-inner-wrap
-					.it-configurator__step-number  2
-					.it-configurator__step-text(data-calculation-text='2')
-						| Добавьте оборудование
-				.it-configurator__step-inner-wrap.it-configurator__step-inner-wrap--size
-					.it-configurator__step-number  3
-					.it-configurator__step-text(data-calculation-text='3')
-						| Отправьте заявку
-					input(type='hidden', name='name', value='')
-					input(type='hidden', name='phone', value='')
-					input(type='hidden', name='message', value='')
+				|	Калькулятор вездехода
+			.it-configurator__subtitle
+				|	Рассчитайте стоимость изготовления вездехода по вашим параметрам. Мы сможем выполнить
+				br
+				|	разработку, предназначенную для эксплуатации в любых условиях.
+			.it-configurator__step-outer-wrap
+				ul.it-configurator__step-wrap
+					li.it-configurator__step-item.active
+						div.it-configurator__step-link.it-btn
+							span.it-configurator__step-number  1
+							span.it-configurator__step-text(data-calculation-text='1')
+								| Выберите модель
+					li.it-configurator__step-item
+						div.it-configurator__step-link.it-btn
+							span.it-configurator__step-number  2
+							span.it-configurator__step-text(data-calculation-text='2')
+								| Добавьте оборудование
+					li.it-configurator__step-item
+						div.it-configurator__step-link.it-btn
+							span.it-configurator__step-number  3
+							span.it-configurator__step-text(data-calculation-text='3')
+								| Отправьте заявку
+			.it-configurator__inner-wrapper
+				.it-configurator__half.it-configurator__half--left
 					.it-configurator__inner-wrap
-						.it-configurator__half.it-configurator__half--left
-							.it-configurator__inner-half.it-configurator__inner-half--left
-								.it-slider
-									.it-slider__top
-										.it-slider__img-wrap
-											img(src="", alt='').it-slider__img
-									.it-slider__bottom
-										.it-slider__img-wrap.it-slider__img-wrap--min
-											img(src="", alt='').it-slider__img.it-slider__img--min
-										.it-slider__img-wrap.it-slider__img-wrap--min
-											img(src="", alt='').it-slider__img.it-slider__img--min
-							.it-configurator__inner-half.it-configurator__inner-half--right
-								.it-configurator__character-title
-									span.it-configurator__character-title-text
-										|    Основные характеристики
-									span.it-configurator__character-title-text
-										|    Добавьте оборудование для модели
-									span.it-configurator__character-title-name
-										| КРЕЧЕТ Z 320-91:
-								ul.it-configurator__list
-									li.it-configurator__list-item
-										span.it-configurator__list-item-key
-											|    Мощность
-										span.it-configurator__list-item-value
-											|    100 л.с.
-									li.it-configurator__list-item
-										span.it-configurator__list-item-key
-											|    Масса
-										span.it-configurator__list-item-value
-											|    2675 кг.
-									li.it-configurator__list-item
-										span.it-configurator__list-item-key
-											|    Грузоподъемность
-										span.it-configurator__list-item-value
-											|    1325 кг.
-									li.it-configurator__list-item
-										span.it-configurator__list-item-key
-											|    Макс. объем топлива
-										span.it-configurator__list-item-value
-											|    200 л.
-									li.it-configurator__list-item
-										span.it-configurator__list-item-key
-											|    Пассажирских мест
-										span.it-configurator__list-item-value
-											|    3
-									li.it-configurator__list-item
-										span.it-configurator__list-item-key
-											|    Пассажирских мест
-										span.it-configurator__list-item-value
-											|    3
-									li.it-configurator__list-item
-										span.it-configurator__list-item-key
-											|    Пассажирских мест
-										span.it-configurator__list-item-value
-											|    445
-									li.it-configurator__list-item
-										span.it-configurator__list-item-key
-											|    Пассажирских мест
-										span.it-configurator__list-item-value
-											|    345
-								.it-configurator__price
-									span.it-configurator__price-text
-										| от
-									span.it-configurator__price-number
-										|    5 900 000
-									span.it-configurator__price-text
-										| руб
-									.it-configurator__price-comment
-										|    Стоимость без дополнительного оборудования
-							.it-configurator__inner-bottom
-								.it-configurator__inner-bottom-facts
-									| Интересные факты: мощность мотора вездехода «КРЕЧЕТ» сопоставима с мощностью танка БТ-7. Вездеход имеет клиренс 600 мм и углы въезда/съезда по 52°
-								.it-configurator__inner-print
-									a.it-configurator__inner-print-link(href="#")
-									| Вывести подбор параметров в pdf
-						.it-configurator__half.it-configurator__half--right
-							.it-configurator__inner-top
-								ul.it-configurator__checkbox-list
-									li.it-configurator__checkbox-item
-										.it-configurator__checkbox-wrap
-											label.it-checkbox.it-configurator__checkbox--size
-												input.it-configurator__checkbox-default(type='checkbox', name='AGREE', checked='checked')
-												span.it-configurator__checkbox-pseudo
-												span.it-configurator__checkbox-text.it-configurator__checkbox-text--color    КРЕЧЕТ Z 210-91
-									li.it-configurator__checkbox-item
-										.it-configurator__checkbox-wrap
-											label.it-checkbox.it-configurator__checkbox--size
-												input.it-configurator__checkbox-default(type='checkbox', name='AGREE', checked='checked')
-												span.it-configurator__checkbox-pseudo
-												span.it-configurator__checkbox-text.it-configurator__checkbox-text--color    КРЕЧЕТ Z 320-91
-									li.it-configurator__checkbox-item
-										.it-configurator__checkbox-wrap
-											label.it-checkbox.it-configurator__checkbox--size
-												input.it-configurator__checkbox-default(type='checkbox', name='AGREE', checked='checked')
-												span.it-configurator__checkbox-pseudo
-												span.it-configurator__checkbox-text.it-configurator__checkbox-text--color    КРЕЧЕТ Z 310-91
-							.it-configurator__inner-center
-								.it-configurator__prepayment
-									.it-configurator__prepayment-title
-										|	Выберите размер предоплаты
-									label.it-configurator__prepayment-number
-										input.it-configurator__checkbox-default(type='checkbox', name='AGREE', checked='checked')
-										span.it-configurator__checkbox-pseudo
-										span.it-configurator__checkbox-text.it-configurator__checkbox-text--color    КРЕЧЕТ Z 310-91
-							.it-configurator__inner-bottom
-								.it-configurator__move-wrap
-									.it-configurator__move-top
-										.it-configurator__move-half
-											img(src="", alt='').it-configurator__move-half--arrow
-										.it-configurator__move-half
-											.it-configurator__move-dot
-										.it-configurator__move-half
-											.it-configurator__move-dot
-										.it-configurator__move-half
-											.it-configurator__move-dot
-										.it-configurator__move-half
-											img(src="", alt='').it-configurator__move-half--arrow
-									.it-configurator__move-bottom
-										.it-configurator__move-buttons
-											button.it-btn.it-configurator__btn.it-configurator__btn--prev(type='button', data-it-btn='prev')
-												| Перейти к следующему шагу
-											button.it-btn.it-configurator__btn.it-configurator__btn--next.it-btn--arrow.active(type='button', data-it-btn='next')
-												| Перейти к следующему шагу
-											button.it-btn.it-configurator__btn.it-configurator__btn--send(type='submit', data-it-btn='send')
-												| Вернуться назад
+						.it-configurator__inner-half.it-configurator__inner-half--left
+							.it-slider
+								.it-slider__top
+									.it-slider__img-wrap
+										img(src="static/img/krechet_configurator/slider/1.jpg", alt='').it-slider__img
+								.it-slider__bottom
+									.it-slider__img-wrap.it-slider__img-wrap--min
+										img(src="static/img/krechet_configurator/slider/2.jpg", alt='').it-slider__img.it-slider__img--min
+									.it-slider__img-wrap.it-slider__img-wrap--min
+										img(src="static/img/krechet_configurator/slider/3.jpg", alt='').it-slider__img.it-slider__img--min
+						.it-configurator__inner-half.it-configurator__inner-half--right
+							.it-configurator__character-title
+								span.it-configurator__character-title-text
+									|    Основные характеристики
+								span.it-configurator__character-title-text.it--hide
+									|    Добавьте оборудование для модели
+								span.it-configurator__character-title-name
+									| КРЕЧЕТ Z 320-91:
+							ul.it-configurator__list
+								li.it-configurator__list-item
+									span.it-configurator__list-item-key
+										|    Мощность
+									span.it-configurator__list-item-value
+										|    100 л.с.
+								li.it-configurator__list-item
+									span.it-configurator__list-item-key
+										|    Масса
+									span.it-configurator__list-item-value
+										|    2675 кг.
+								li.it-configurator__list-item
+									span.it-configurator__list-item-key
+										|    Грузоподъемность
+									span.it-configurator__list-item-value
+										|    1325 кг.
+								li.it-configurator__list-item
+									span.it-configurator__list-item-key
+										|    Макс. объем топлива
+									span.it-configurator__list-item-value
+										|    200 л.
+								li.it-configurator__list-item
+									span.it-configurator__list-item-key
+										|    Пассажирских мест
+									span.it-configurator__list-item-value
+										|    3
+							.it-configurator__price
+								span.it-configurator__price-text
+									| от
+								span.it-configurator__price-number
+									|    5 900 000
+								span.it-configurator__price-text
+									| руб
+							.it-configurator__price-comment
+								|    Стоимость без дополнительного оборудования
+					.it-configurator__inner-bottom
+						.it-configurator__inner-bottom-facts
+							b
+								|Интересные факты:
+							|	мощность мотора вездехода «КРЕЧЕТ» сопоставима с мощностью танка БТ-7. Вездеход имеет клиренс 600 мм и углы въезда/съезда по 52°
+						.it-configurator__inner-print.it--hide
+							a.it-configurator__inner-print-link(href="#")
+							| Вывести подбор параметров в pdf
+				.it-configurator__half.it-configurator__half--right
+					.it-configurator__inner-top
+						ul.it-configurator__checkbox-list
+							li.it-configurator__checkbox-item.active
+								.it-checkbox-wrap
+									label.it-checkbox.it-checkbox--indent
+										input.it-checkbox__default(type='radio', name='model', checked)
+										span.it-checkbox__pseudo
+										span.it-checkbox__text    КРЕЧЕТ Z 210-91
+							li.it-configurator__checkbox-item
+								.it-checkbox-wrap
+									label.it-checkbox.it-checkbox--indent
+										input.it-checkbox__default(type='radio', name='model')
+										span.it-checkbox__pseudo
+										span.it-checkbox__text    КРЕЧЕТ Z 320-91
+							li.it-configurator__checkbox-item
+								.it-checkbox-wrap
+									label.it-checkbox.it-checkbox--indent
+										input.it-checkbox__default(type='radio', name='model')
+										span.it-checkbox__pseudo
+										span.it-checkbox__text    КРЕЧЕТ Z 310-91
+					.it-configurator__inner-center
+						.it-configurator__prepayment
+							.it-configurator__prepayment-title
+								|	Выберите размер предоплаты
+							ul.it-configurator__prepayment-checkbox-list
+								li.it-configurator__prepayment-checkbox-item.active
+										label.it-checkbox-prepayment
+											input.it-checkbox-prepayment__default(type='radio', name='prepayment', checked='checked', value="100")
+											span.it-checkbox-prepayment__pseudo
+											span.it-checkbox-prepayment__text    100%
+								li.it-configurator__prepayment-checkbox-item
+									label.it-checkbox-prepayment
+											input.it-checkbox-prepayment__default(type='radio', name='prepayment' value="70")
+											span.it-checkbox-prepayment__pseudo
+											span.it-checkbox-prepayment__text    70%
+								li.it-configurator__prepayment-checkbox-item
+										label.it-checkbox-prepayment
+											input.it-checkbox-prepayment__default(type='radio', name='prepayment' value="50")
+											span.it-checkbox-prepayment__pseudo
+											span.it-checkbox-prepayment__text    50%
+								li.it-configurator__prepayment-checkbox-item
+										label.it-checkbox-prepayment
+											input.it-checkbox-prepayment__default(type='radio', name='prepayment' value="0")
+											span.it-checkbox-prepayment__pseudo
+											span.it-checkbox-prepayment__text    0%
+					.it-configurator__inner-bottom
+						.it-configurator__move-wrap
+							.it-configurator__move-top
+								.it-configurator__move-half
+									img(src="static/img/krechet_configurator/move/arrow-prev.svg", alt='').it-configurator__move-half--arrow
+								.it-configurator__move-half
+									.it-configurator__move-dot
+								.it-configurator__move-half
+									.it-configurator__move-dot
+								.it-configurator__move-half
+									.it-configurator__move-dot
+								.it-configurator__move-half
+									img(src="static/img/krechet_configurator/move/arrow-next.svg", alt='').it-configurator__move-half--arrow
+							.it-configurator__move-bottom
+								.it-configurator__move-buttons
+									button.it-btn.it-btn--transparent.it-configurator__btn(type='button', data-it-btn='next')
+										| Перейти к следующему шагу
+									button.it-btn.it-btn--transparent.it-configurator__btn(type='submit', data-it-btn='send')
+										| Вернуться назад
