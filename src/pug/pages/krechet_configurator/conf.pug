@@ -169,21 +169,23 @@ section#it-configurator.it-configurator.it-all--indent
 									|    Комментарий к заказу:
 								textarea.it-configurator__form-input.it-configurator__form-input--textare(type='text', name='comment', placeholder="")
 							.it-configurator__form-bottom
-								.it-configurator__form-half
-									.it-configurator__form-input-title
-										|    Населенный пункт:
-									input.it-configurator__form-input(type='text', name='city', checked placeholder="Москва")
-								.it-configurator__form-input-change
-									|	Изменить
-									label.it-checkbox
-										input.it-checkbox__default(type='checkbox', name='comment')
-										span.it-checkbox__pseudo
-										span.it-checkbox__text
-											| Согласен на обработку
-											a(href="#").it-configurator__form-checkbox-link
-												|    персональных данных
+								.it-configurator__form-bottom-half.it-configurator__form-bottom-half--left
+									.it-configurator__form-half.it-configurator__form-half--size-1
+										.it-configurator__form-input-title
+											|    Населенный пункт:
+										input.it-configurator__form-input(type='text', name='city', checked placeholder="Москва")
+									.it-configurator__form-input-change
+										|	Изменить
+								.it-configurator__form-bottom-half.it-configurator__form-bottom-half--right
+									label.it-checkbox.it-configurator__form-checkbox
+											input.it-checkbox__default(type='checkbox', name='comment')
+											span.it-checkbox__pseudo
+											span.it-checkbox__text
+												| Согласен на обработку
+												a(href="#").it-configurator__form-checkbox-link
+													|    персональных данных
 							.it-configurator__form-buttons
-								.it-configurator__form-btn.it-btn
+								.it-configurator__form-btn.it-btn.it-btn--border
 									|	Отправить
 				.it-configurator__half.it-configurator__half--right
 					.it-configurator__inner-top.it--hide
