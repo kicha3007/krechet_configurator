@@ -27,7 +27,7 @@ section#it-configurator.it-configurator.it-all--indent
 								| Отправьте заявку
 			.it-configurator__inner-wrapper
 				.it-configurator__half.it-configurator__half--left
-					.it-configurator__inner-wrap.active(data-it-conf-part="2")
+					.it-configurator__inner-wrap.active(data-it-conf-part="2" data-it-main-content)
 						.it-configurator__inner-half.it-configurator__inner-half--left
 							.it-slider
 								.it-slider__top.slider-for
@@ -215,7 +215,7 @@ section#it-configurator.it-configurator.it-all--indent
 										input.it-checkbox__default(type='radio', name='model')
 										span.it-checkbox__pseudo
 										span.it-checkbox__text    КРЕЧЕТ Z 310-91
-					.it-configurator__inner-top.it-configurator__inner-top--mod-2
+					.it-configurator__inner-top.it-configurator__inner-top--mod-2(data-it-conf-part="2")
 						.it-configurator__price-inner
 							.it-configurator__price-inner-top
 								span.it-configurator__price-inner-number
@@ -292,12 +292,12 @@ section#it-configurator.it-configurator.it-all--indent
 							.it-configurator__move-top
 								.it-configurator__move-half.it-configurator__move-half--arrow(data-it-move-arrow="prev")
 									img(src="static/img/krechet_configurator/move/arrow-next.svg", alt='').it-configurator__move-arrow.it-configurator__move-arrow-prev
-								.it-configurator__move-half.it-configurator__move-half--size.active
-									.it-configurator__move-dot(data-it-dot-line="1")
-								.it-configurator__move-half.it-configurator__move-half--size
-									.it-configurator__move-dot(data-it-dot-line="2")
-								.it-configurator__move-half.it-configurator__move-half--size
-									.it-configurator__move-dot(data-it-dot-line="3")
+								.it-configurator__move-half.it-configurator__move-half--size.active(data-it-dot="1")
+									.it-configurator__move-dot
+								.it-configurator__move-half.it-configurator__move-half--size(data-it-dot="2")
+									.it-configurator__move-dot
+								.it-configurator__move-half.it-configurator__move-half--size(data-it-dot="3")
+									.it-configurator__move-dot
 								.it-configurator__move-half.it-configurator__move-half--arrow.active(data-it-move-arrow="next")
 									img(src="static/img/krechet_configurator/move/arrow-next.svg", alt='').it-configurator__move-arrow.it-configurator__move-arrow-next
 							.it-configurator__move-bottom

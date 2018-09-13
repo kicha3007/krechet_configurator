@@ -23,11 +23,6 @@ $(function () {
 })
 
 
-var stepCounter = 1;
-
-var btnNext = $("[data-it-btn='next']"),
-    btnPrev = $("[data-it-btn='prev']");
-
 
 // const conf = {
 //     character:  $("[data-it-character]"),
@@ -45,53 +40,74 @@ var btnNext = $("[data-it-btn='next']"),
 // var btnSend = $("[data-it-btn='send']");
 // var calcTitle = $("[data-calculation-title]");
 
+var stepCounter = 1;
+
+var btnNext = $("[data-it-btn='next']"),
+    btnPrev = $("[data-it-btn='prev']"),
+    moveArrowNext = $("[data-it-move-arrow='next']"),
+    moveArrowPrev = $("[data-it-move-arrow='prev']");
+
+var mainContPart = $("[data-it-main-content]");
+var confDot = $("[data-it-dot]");
 
 function calculation() {
-    var dotLine = $("[data-it-dot-line='" + stepCounter + "']");
+    var confActiveDot = $("[data-it-dot='" + stepCounter + "']");
     var confActiveParts = $("[data-it-conf-part='" + stepCounter + "']");
     var prevConfParts = $("[data-it-conf-part='" + (stepCounter - +1) + "']");
+    var nextConfParts = $("[data-it-conf-part='" + (stepCounter + +1) + "']");
 
     switch (stepCounter) {
         case 1:
-
             confActiveParts.addClass("active");
-
-            // btnPrev.removeClass("active");
-            // dotLine.next().removeClass("active");
-            // calculationText.addClass("active");
-            // calculationText.next().removeClass("active");
-            // calculationText.parent().next().find("[data-calculation-text]").removeClass("active");
+            nextConfParts.removeClass("active");
+            mainContPart.addClass("active");
+            btnNext.addClass("active");
+            btnPrev.removeClass("active");
+            moveArrowPrev.removeClass("active");
+            addDotActive()
             break;
         case 2:
             confActiveParts.addClass("active");
             prevConfParts.removeClass("active");
-            // btnPrev.addClass("active");
-            // btnSend.removeClass("active");
-            // btnNext.addClass("active");
-            // dotLine.addClass("active");
-            // dotLine.next().removeClass("active");
-            // calculationText.addClass("active");
-            // calculationText.parent().next().find("[data-calculation-text]").removeClass("active");
-            // calculationText.parent().prev().find("[data-calculation-text]").removeClass("active");
+            nextConfParts.removeClass("active");
+            addDotActive()
+            moveArrowNext.addClass("active");
+            moveArrowPrev.addClass("active");
             break;
         case 3:
             confActiveParts.addClass("active");
             prevConfParts.removeClass("active");
+            btnNext.removeClass("active");
+            btnPrev.addClass("active");
+            moveArrowNext.removeClass("active");
+            addDotActive()
 
-            // btnNext.removeClass("active");
-            // btnPrev.addClass("active");
-            // btnSend.addClass("active");
-            // dotLine.addClass("active");
-            // calculationText.addClass("active");
-            // calculationText.parent().prev().find("[data-calculation-text]").removeClass("active");
+
             // getCalculationValue();
             break;
         case 4:
     }
+
+    function addDotActive() {
+        confDot.removeClass("active");
+        confActiveDot.addClass("active");
+    }
+
 }
 
+function stepCounterPlus() {
+    stepCounter++;
+    calculation();
+}
+
+function stepCounterMinus() {
+    stepCounter--;
+    calculation();
+}
 
 btnNext.on("click", function (e) {
+    stepCounterPlus();
+
     // $(".it-validate-color").removeClass("it-validate-color");
     // $(".it-validate-error").removeClass("active");
     //
@@ -106,12 +122,10 @@ btnNext.on("click", function (e) {
     // });
     //
     // if (!$(".it-validate-error").hasClass("active")) {
-    stepCounter++;
-    calculation();
+
     // }
 });
 
 btnPrev.on("click", function (e) {
-    stepCounter--;
-    calculation();
+    stepCounterMinus();
 });
