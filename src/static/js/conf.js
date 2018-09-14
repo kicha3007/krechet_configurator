@@ -22,8 +22,6 @@ $(function () {
 
 })
 
-
-
 // const conf = {
 //     character:  $("[data-it-character]"),
 //     facts:  $("[data-it-facts]"),
@@ -36,7 +34,6 @@ $(function () {
 //     allSum:  $("[data-it-all-sum]"),
 // }
 
-
 // var btnSend = $("[data-it-btn='send']");
 // var calcTitle = $("[data-calculation-title]");
 
@@ -47,41 +44,42 @@ var btnNext = $("[data-it-btn='next']"),
     moveArrowNext = $("[data-it-move-arrow='next']"),
     moveArrowPrev = $("[data-it-move-arrow='prev']");
 
-var mainContPart = $("[data-it-main-content]");
-var confDot = $("[data-it-dot]");
+var confParts = $("[data-it-conf-part]"),
+mainContPart = $("[data-it-main-content]"),
+confDot = $("[data-it-dot]"),
+confStep = $("[data-it-step]");
+confModels = $("[data-it-models]");
 
 function calculation() {
-    var confActiveDot = $("[data-it-dot='" + stepCounter + "']");
-    var confActiveParts = $("[data-it-conf-part='" + stepCounter + "']");
-    var prevConfParts = $("[data-it-conf-part='" + (stepCounter - +1) + "']");
-    var nextConfParts = $("[data-it-conf-part='" + (stepCounter + +1) + "']");
+    var confActiveDot = $("[data-it-dot='" + stepCounter + "']"),
+    confActiveParts = $("[data-it-conf-part='" + stepCounter + "']"),
+    confActiveStep = $("[data-it-step='" + stepCounter + "']");
 
     switch (stepCounter) {
         case 1:
-            confActiveParts.addClass("active");
-            nextConfParts.removeClass("active");
+            addPartActive();
             mainContPart.addClass("active");
             btnNext.addClass("active");
             btnPrev.removeClass("active");
             moveArrowPrev.removeClass("active");
-            addDotActive()
+            addDotActive();
+            addStepActive();
             break;
         case 2:
-            confActiveParts.addClass("active");
-            prevConfParts.removeClass("active");
-            nextConfParts.removeClass("active");
-            addDotActive()
+            addPartActive();
             moveArrowNext.addClass("active");
             moveArrowPrev.addClass("active");
+            addDotActive();
+            addStepActive();
+            perfectScrollStart();
             break;
         case 3:
-            confActiveParts.addClass("active");
-            prevConfParts.removeClass("active");
+            addPartActive();
             btnNext.removeClass("active");
             btnPrev.addClass("active");
             moveArrowNext.removeClass("active");
-            addDotActive()
-
+            addDotActive();
+            addStepActive();
 
             // getCalculationValue();
             break;
@@ -93,7 +91,25 @@ function calculation() {
         confActiveDot.addClass("active");
     }
 
+    function addStepActive() {
+        confStep.removeClass("active");
+        confActiveStep.addClass("active");
+    }
+
+    function addPartActive() {
+        confParts.removeClass("active");
+        confActiveParts.addClass("active");
+    }
 }
+
+confModels.on("click", function () {
+    var $this = $(this);
+    setTimeout(function () {
+        confModels.removeClass("active");
+        $this.addClass("active");
+    }, 50)
+
+})
 
 function stepCounterPlus() {
     stepCounter++;
@@ -104,6 +120,14 @@ function stepCounterMinus() {
     stepCounter--;
     calculation();
 }
+
+moveArrowNext.on("click", function (e) {
+    stepCounterPlus();
+});
+
+moveArrowPrev.on("click", function (e) {
+    stepCounterMinus();
+});
 
 btnNext.on("click", function (e) {
     stepCounterPlus();
@@ -129,3 +153,85 @@ btnNext.on("click", function (e) {
 btnPrev.on("click", function (e) {
     stepCounterMinus();
 });
+
+
+/* ------------------- perfect-scrollbar  ------------------- */
+/*
+var perfectScrollContainers = document.querySelectorAll('[data-scroll-wrap]');
+
+var PerfectScrollbarElement;
+
+function perfectScrollStart() {
+    if (perfectScrollContainers.length) {
+
+        for (var i = 0; i < perfectScrollContainers.length; i++) {
+
+            var perfectScrollContainersWidtn = +perfectScrollContainers[i].scrollWidth - +perfectScrollContainers[i].clientWidth;
+
+            if (perfectScrollContainersWidtn && !perfectScrollContainers[i].classList.contains("ps")) {
+
+                PerfectScrollbarElement = new PerfectScrollbar(perfectScrollContainers[i], {
+                    maxScrollbarLength: 50,
+                    wheelPropagation: true,
+                    suppressScrollY: true,
+                    wheelSpeed: 0.2
+                    //   useBothWheelAxes: true
+
+                });
+
+            } else if (typeof PerfectScrollbarElement != "undefined") {
+                PerfectScrollbarElement.destroy();
+            }
+        }
+    }
+}
+
+
+*/
+
+var perfectScrollContainer = document.querySelector('[data-scroll-wrap]');
+
+function perfectScrollStart () {
+
+    PerfectScrollbarElement = new PerfectScrollbar(perfectScrollContainer, {
+        maxScrollbarLength: 65,
+        wheelPropagation: true,
+        suppressScrollX: true,
+        wheelSpeed: 0.2
+          // useBothWheelAxes: true
+    });
+}
+
+
+var checkboxItem = $("[data-checkbox-item]"),
+    checkboxItemModal = $("[data-checkbox-item-modal]");
+
+function checkeds ($this){
+    
+
+}
+
+checkboxItem.each(function (indx, elem) {
+    var $this = $(elem);
+
+
+    $this.on("click", function () {
+        $this = $(this);
+
+        if ($this.attr("checked")) {
+            $("[data-checkbox-item='1']").attr("checked", "checked");
+        } else {
+            $("[data-checkbox-item='1']").removeAttr("checked");
+        }
+    });
+
+});
+
+// checkboxItem.on("click", function () {
+//     if($this.attr("checked")){
+//     $("[data-checkbox-item='1']").attr("checked", "checked")
+//     } else {
+//         $("[data-checkbox-item='1']").removeAttr("checked");
+//     }
+//
+// })

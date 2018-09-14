@@ -101,14 +101,15 @@
   flex-basis: 40px;
 }
 
-.it-configurator__step-link.it-btn {
+.it-configurator__step-item .it-configurator__step-link {
   text-decoration: none;
-  background-color: #ffffff;
+  background-color: transparent;
   cursor: auto;
+  transition: 0.1s;
 }
 
 .it-configurator__step-number {
-  transition: 0.3s ease all;
+  transition: 0.1s;
   color: rgba(51, 51, 51, 0.5);
   margin-right: 10px;
   font-weight: 700;
@@ -116,7 +117,7 @@
 
 .it-configurator__step-text {
   color: #000;
-  transition: 0.3s ease all;
+  transition: 0.1s;
 }
 
 .it-configurator__step-link:hover,
@@ -391,7 +392,7 @@
 
 .it-configurator__checkbox-item {
   list-style-type: none;
-  padding: 10px 0;
+
 }
 
 .it-configurator__checkbox-item.active {
@@ -526,6 +527,7 @@
   width: 100%;
   position: relative;
   margin: 0;
+  padding: 10px 0;
 
 }
 
@@ -591,6 +593,8 @@
   background-color: $main-color;
 
 }
+
+
 
 //.it-checkbox__default:checked + .it-checkbox__pseudo {
 //
@@ -822,7 +826,7 @@
 }
 
 .it-configurator__checkbox-list--options .it-checkbox--indent {
-  padding: 0 15px;
+  padding: 10px 15px;
 }
 
 .it-configurator__checkbox-list--options .it-checkbox__text {
@@ -836,10 +840,21 @@
   background-color: #E8E8E8;
 }
 
-.it-configurator__checkbox-list-wrap {
-  max-height: 260px;
-  overflow: hidden;
+.it-configurator__outer-wrapper {
+  height: 260px;
+  position: relative;
   margin-bottom: 20px;
+  padding-right: 20px;
+
+}
+
+.it-configurator__checkbox-list-wrap {
+
+}
+
+.it-configurator__checkbox-list--options {
+  margin: 0;
+  padding: 0;
 }
 
 .it-configurator__character__link {
@@ -1148,6 +1163,45 @@
   padding: 20px 0 0 ;
   margin: 0 20px;
   border-top: 1px solid #A7A7A7;
+}
+
+
+
+//.ps__rail-x .ps__thumb-x {
+//  border-radius: 0 !important;
+//  bottom: 0 !important;
+//  height: 3px !important;;
+//  background: #3ec7c6 !important;
+//  transition: left 0.1s;
+//}
+//
+//.ps__rail-x {
+//  background: transparent !important;
+//  opacity: 1 !important;
+//  height: 0 !important;
+//  margin-bottom: 0 !important;
+//}
+
+.ps__rail-y .ps__thumb-y {
+  width: 4px !important;
+  background: $main-color !important;
+  border-radius: 30px !important;
+  height: 65px !important;
+  opacity: 1 !important;
+}
+
+.ps__rail-y {
+  //height: 10px !important;
+
+  opacity: 1 !important;
+  background-color: red;
+  background-color: #E5E5E5 !important;
+  width: 4px !important;
+
+}
+
+.ps__thumb-y {
+  right: 0 !important;
 }
 
 

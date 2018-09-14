@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="static/css/jquery.fancybox.css">
     <link rel="stylesheet" type="text/css" href="static/css/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="static/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="static/css/perfect-scrollbar.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="static/css/main.css">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
@@ -25,14 +26,14 @@
               </div>
               <div class="it-configurator__step-outer-wrap">
                 <ul class="it-configurator__step-wrap">
-                  <li class="it-configurator__step-item active">
-                    <div class="it-configurator__step-link it-btn"><span class="it-configurator__step-number"> 1</span><span class="it-configurator__step-text" data-calculation-text="1">Выберите модель</span></div>
+                  <li class="it-configurator__step-item active" data-it-step="1">
+                    <div class="it-configurator__step-link it-btn"><span class="it-configurator__step-number"> 1</span><span class="it-configurator__step-text">Выберите модель</span></div>
                   </li>
-                  <li class="it-configurator__step-item">
-                    <div class="it-configurator__step-link it-btn"><span class="it-configurator__step-number"> 2</span><span class="it-configurator__step-text" data-calculation-text="2">Добавьте оборудование</span></div>
+                  <li class="it-configurator__step-item" data-it-step="2">
+                    <div class="it-configurator__step-link it-btn"><span class="it-configurator__step-number"> 2</span><span class="it-configurator__step-text">Добавьте оборудование</span></div>
                   </li>
-                  <li class="it-configurator__step-item">
-                    <div class="it-configurator__step-link it-btn"><span class="it-configurator__step-number"> 3</span><span class="it-configurator__step-text" data-calculation-text="3">Отправьте заявку</span></div>
+                  <li class="it-configurator__step-item" data-it-step="3">
+                    <div class="it-configurator__step-link it-btn"><span class="it-configurator__step-number"> 3</span><span class="it-configurator__step-text">Отправьте заявку</span></div>
                   </li>
                 </ul>
               </div>
@@ -68,65 +69,67 @@
                       </div>
                       <div class="it-configurator__character it-configurator__character--options" data-it-conf-part="2">
                         <div class="it-configurator__character-title"><span class="it-configurator__character-title-text">   Добавьте оборудование для модели</span><span class="it-configurator__character-title-name">КРЕЧЕТ Z 320-91:</span></div>
-                        <div class="it-configurator__checkbox-list-wrap">
-                          <ul class="it-configurator__checkbox-list it-configurator__checkbox-list--options">
-                            <li class="it-configurator__checkbox-item">
-                              <div class="it-checkbox-wrap">
-                                <label class="it-checkbox it-checkbox--indent">
-                                  <input class="it-checkbox__default" type="radio" name="model" checked><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Диск с шиной 1300х700-21" Арктиктранс</span>
-                                </label>
-                              </div>
-                            </li>
-                            <li class="it-configurator__checkbox-item">
-                              <div class="it-checkbox-wrap">
-                                <label class="it-checkbox it-checkbox--indent">
-                                  <input class="it-checkbox__default" type="radio" name="model"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Диск с шиной 1300х600-21" Трэкол Вездеход</span>
-                                </label>
-                              </div>
-                            </li>
-                            <li class="it-configurator__checkbox-item">
-                              <div class="it-checkbox-wrap">
-                                <label class="it-checkbox it-checkbox--indent">
-                                  <input class="it-checkbox__default" type="radio" name="model"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Диск с шиной "Avtoros" 700/55- 2ILT"</span>
-                                </label>
-                              </div>
-                            </li>
-                            <li class="it-configurator__checkbox-item">
-                              <div class="it-checkbox-wrap">
-                                <label class="it-checkbox it-checkbox--indent">
-                                  <input class="it-checkbox__default" type="radio" name="model"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Диск с шиной "Avtoros" 700/55- 2ILT"</span>
-                                </label>
-                              </div>
-                            </li>
-                            <li class="it-configurator__checkbox-item">
-                              <div class="it-checkbox-wrap">
-                                <label class="it-checkbox it-checkbox--indent">
-                                  <input class="it-checkbox__default" type="radio" name="model"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Диск с шиной "Avtoros" 700/55- 2ILT"</span>
-                                </label>
-                              </div>
-                            </li>
-                            <li class="it-configurator__checkbox-item">
-                              <div class="it-checkbox-wrap">
-                                <label class="it-checkbox it-checkbox--indent">
-                                  <input class="it-checkbox__default" type="radio" name="model"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Диск с шиной "Avtoros" 700/55- 2ILT"</span>
-                                </label>
-                              </div>
-                            </li>
-                            <li class="it-configurator__checkbox-item">
-                              <div class="it-checkbox-wrap">
-                                <label class="it-checkbox it-checkbox--indent">
-                                  <input class="it-checkbox__default" type="radio" name="model"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Диск с шиной "Avtoros" 700/55- 2ILT"</span>
-                                </label>
-                              </div>
-                            </li>
-                            <li class="it-configurator__checkbox-item">
-                              <div class="it-checkbox-wrap">
-                                <label class="it-checkbox it-checkbox--indent">
-                                  <input class="it-checkbox__default" type="radio" name="model"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Диск с шиной "Avtoros" 700/55- 2ILT"</span>
-                                </label>
-                              </div>
-                            </li>
-                          </ul>
+                        <div class="it-configurator__outer-wrapper" data-scroll-wrap>
+                          <div class="it-configurator__checkbox-list-wrap">
+                            <ul class="it-configurator__checkbox-list it-configurator__checkbox-list--options">
+                              <li class="it-configurator__checkbox-item">
+                                <div class="it-checkbox-wrap">
+                                  <label class="it-checkbox it-checkbox--indent">
+                                    <input class="it-checkbox__default" type="checkbox" name="model" data-checkbox-item="1"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Диск с шиной 1300х700-21" Арктиктранс</span>
+                                  </label>
+                                </div>
+                              </li>
+                              <li class="it-configurator__checkbox-item">
+                                <div class="it-checkbox-wrap">
+                                  <label class="it-checkbox it-checkbox--indent">
+                                    <input class="it-checkbox__default" type="checkbox" name="model" data-checkbox-item="2"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Диск с шиной 1300х600-21" Трэкол Вездеход</span>
+                                  </label>
+                                </div>
+                              </li>
+                              <li class="it-configurator__checkbox-item">
+                                <div class="it-checkbox-wrap">
+                                  <label class="it-checkbox it-checkbox--indent">
+                                    <input class="it-checkbox__default" type="checkbox" name="model" data-checkbox-item="3"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Диск с шиной "Avtoros" 700/55- 2ILT"</span>
+                                  </label>
+                                </div>
+                              </li>
+                              <li class="it-configurator__checkbox-item">
+                                <div class="it-checkbox-wrap">
+                                  <label class="it-checkbox it-checkbox--indent">
+                                    <input class="it-checkbox__default" type="checkbox" name="model" data-checkbox-item="4"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Диск с шиной "Avtoros" 700/55- 2ILT"</span>
+                                  </label>
+                                </div>
+                              </li>
+                              <li class="it-configurator__checkbox-item">
+                                <div class="it-checkbox-wrap">
+                                  <label class="it-checkbox it-checkbox--indent">
+                                    <input class="it-checkbox__default" type="checkbox" name="model" data-checkbox-item="5"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Диск с шиной "Avtoros" 700/55- 2ILT"</span>
+                                  </label>
+                                </div>
+                              </li>
+                              <li class="it-configurator__checkbox-item">
+                                <div class="it-checkbox-wrap">
+                                  <label class="it-checkbox it-checkbox--indent">
+                                    <input class="it-checkbox__default" type="checkbox" name="model"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Диск с шиной "Avtoros" 700/55- 2ILT"</span>
+                                  </label>
+                                </div>
+                              </li>
+                              <li class="it-configurator__checkbox-item">
+                                <div class="it-checkbox-wrap">
+                                  <label class="it-checkbox it-checkbox--indent">
+                                    <input class="it-checkbox__default" type="checkbox" name="model"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Диск с шиной "Avtoros" 700/55- 2ILT"</span>
+                                  </label>
+                                </div>
+                              </li>
+                              <li class="it-configurator__checkbox-item">
+                                <div class="it-checkbox-wrap">
+                                  <label class="it-checkbox it-checkbox--indent">
+                                    <input class="it-checkbox__default" type="checkbox" name="model"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Диск с шиной "Avtoros" 700/55- 2ILT"</span>
+                                  </label>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
                         </div><a class="it-configurator__character__link" href="#">	выбрать из полного списка</a>
                       </div>
                     </div>
@@ -180,21 +183,21 @@
                 <div class="it-configurator__half it-configurator__half--right">
                   <div class="it-configurator__inner-top active" data-it-conf-part="1">
                     <ul class="it-configurator__checkbox-list">
-                      <li class="it-configurator__checkbox-item active">
+                      <li class="it-configurator__checkbox-item active" data-it-models>
                         <div class="it-checkbox-wrap">
                           <label class="it-checkbox it-checkbox--indent">
                             <input class="it-checkbox__default" type="radio" name="model" checked><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   КРЕЧЕТ Z 210-91</span>
                           </label>
                         </div>
                       </li>
-                      <li class="it-configurator__checkbox-item">
+                      <li class="it-configurator__checkbox-item" data-it-models>
                         <div class="it-checkbox-wrap">
                           <label class="it-checkbox it-checkbox--indent">
                             <input class="it-checkbox__default" type="radio" name="model"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   КРЕЧЕТ Z 320-91</span>
                           </label>
                         </div>
                       </li>
-                      <li class="it-configurator__checkbox-item">
+                      <li class="it-configurator__checkbox-item" data-it-models>
                         <div class="it-checkbox-wrap">
                           <label class="it-checkbox it-checkbox--indent">
                             <input class="it-checkbox__default" type="radio" name="model"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   КРЕЧЕТ Z 310-91</span>
@@ -250,11 +253,11 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="it-configurator__inner-center it-configurator__inner-center--mod-2">
+                  <div class="it-configurator__inner-center it-configurator__inner-center--mod-2" data-it-conf-part="2">
                     <div class="it-configurator__color">
-                      <div class="it-configurator__color-title">   Выберите размер предоплаты</div>
+                      <div class="it-configurator__color-title">   Можем изготовить вездеход любой расцветки</div>
                       <div class="it-configurator__color-input-wrap">
-                        <input class="it-configurator__color-input" type="text" name="color" value="Введите название цвета">
+                        <input class="it-configurator__color-input" type="text" name="color" value="" placeholder="Введите название цвета">
                       </div>
                       <div class="it-configurator__color-comment">   * Цвет снегоболотоходов на выбор заказчика.<br>Простые цвета без доплаты</div>
                     </div>
@@ -304,27 +307,27 @@
                   <ul class="it-configurator-options__inner-list">
                     <li class="it-configurator-options__inner-item">
                       <label class="it-checkbox-options">
-                        <input class="it-checkbox-options__default" type="checkbox" name="options"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Диск c шиной 1300x700-21" (Арктиктранс)</span>
+                        <input class="it-checkbox-options__default" type="checkbox" name="options" data-checkbox-item="1"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Диск c шиной 1300x700-21" (Арктиктранс)</span>
                       </label>
                     </li>
                     <li class="it-configurator-options__inner-item">
                       <label class="it-checkbox-options">
-                        <input class="it-checkbox-options__default" type="checkbox" name="options"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Удлинитель подушки переднего сиденья с откидной подножкой в сборе</span>
+                        <input class="it-checkbox-options__default" type="checkbox" name="options" data-checkbox-item="2"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Удлинитель подушки переднего сиденья с откидной подножкой в сборе</span>
                       </label>
                     </li>
                     <li class="it-configurator-options__inner-item">
                       <label class="it-checkbox-options">
-                        <input class="it-checkbox-options__default" type="checkbox" name="options"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Подогреватель двигателя автономный WEBASTO Thermo Top Е Diesel в сборе</span>
+                        <input class="it-checkbox-options__default" type="checkbox" name="options" data-checkbox-item="3"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Подогреватель двигателя автономный WEBASTO Thermo Top Е Diesel в сборе</span>
                       </label>
                     </li>
                     <li class="it-configurator-options__inner-item">
                       <label class="it-checkbox-options">
-                        <input class="it-checkbox-options__default" type="checkbox" name="options"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Диск с шиной 1300x600-21" (Трэкол Вездеход,)</span>
+                        <input class="it-checkbox-options__default" type="checkbox" name="options" data-checkbox-item="4"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Диск с шиной 1300x600-21" (Трэкол Вездеход,)</span>
                       </label>
                     </li>
                     <li class="it-configurator-options__inner-item">
                       <label class="it-checkbox-options">
-                        <input class="it-checkbox-options__default" type="checkbox" name="options"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Сиденье откидное на колесную арку в сборе</span>
+                        <input class="it-checkbox-options__default" type="checkbox" name="options" data-checkbox-item="5"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Сиденье откидное на колесную арку в сборе</span>
                       </label>
                     </li>
                     <li class="it-configurator-options__inner-item">
@@ -472,6 +475,7 @@
     </div>
     <script src="static/js/jquery.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="static/js/perfect-scrollbar.js"></script>
     <script src="static/js/conf.js" type="text/javascript"></script>
     <!--script(src='static/js/jquery.fancybox.js', type='text/javascript')-->
     <!--script(src='static/js/jquery.maskedinput.min.js', type='text/javascript')-->

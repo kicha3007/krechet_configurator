@@ -10,20 +10,20 @@ section#it-configurator.it-configurator.it-all--indent
 					|	разработку, предназначенную для эксплуатации в любых условиях.
 			.it-configurator__step-outer-wrap
 				ul.it-configurator__step-wrap
-					li.it-configurator__step-item.active
+					li.it-configurator__step-item.active(data-it-step="1")
 						div.it-configurator__step-link.it-btn
 							span.it-configurator__step-number  1
-							span.it-configurator__step-text(data-calculation-text='1')
+							span.it-configurator__step-text
 								| Выберите модель
-					li.it-configurator__step-item
+					li.it-configurator__step-item(data-it-step="2")
 						div.it-configurator__step-link.it-btn
 							span.it-configurator__step-number  2
-							span.it-configurator__step-text(data-calculation-text='2')
+							span.it-configurator__step-text
 								| Добавьте оборудование
-					li.it-configurator__step-item
+					li.it-configurator__step-item(data-it-step="3")
 						div.it-configurator__step-link.it-btn
 							span.it-configurator__step-number  3
-							span.it-configurator__step-text(data-calculation-text='3')
+							span.it-configurator__step-text
 								| Отправьте заявку
 			.it-configurator__inner-wrapper
 				.it-configurator__half.it-configurator__half--left
@@ -92,56 +92,57 @@ section#it-configurator.it-configurator.it-all--indent
 											|    Добавьте оборудование для модели
 										span.it-configurator__character-title-name
 											| КРЕЧЕТ Z 320-91:
-									.it-configurator__checkbox-list-wrap
-										ul.it-configurator__checkbox-list.it-configurator__checkbox-list--options
-											li.it-configurator__checkbox-item
-												.it-checkbox-wrap
-													label.it-checkbox.it-checkbox--indent
-														input.it-checkbox__default(type='radio', name='model', checked)
-														span.it-checkbox__pseudo
-														span.it-checkbox__text    Диск с шиной 1300х700-21" Арктиктранс
-											li.it-configurator__checkbox-item
-												.it-checkbox-wrap
-													label.it-checkbox.it-checkbox--indent
-														input.it-checkbox__default(type='radio', name='model')
-														span.it-checkbox__pseudo
-														span.it-checkbox__text    Диск с шиной 1300х600-21" Трэкол Вездеход
-											li.it-configurator__checkbox-item
-												.it-checkbox-wrap
-													label.it-checkbox.it-checkbox--indent
-														input.it-checkbox__default(type='radio', name='model')
-														span.it-checkbox__pseudo
-														span.it-checkbox__text    Диск с шиной "Avtoros" 700/55- 2ILT"
-											li.it-configurator__checkbox-item
-												.it-checkbox-wrap
-													label.it-checkbox.it-checkbox--indent
-														input.it-checkbox__default(type='radio', name='model')
-														span.it-checkbox__pseudo
-														span.it-checkbox__text    Диск с шиной "Avtoros" 700/55- 2ILT"
-											li.it-configurator__checkbox-item
-												.it-checkbox-wrap
-													label.it-checkbox.it-checkbox--indent
-														input.it-checkbox__default(type='radio', name='model')
-														span.it-checkbox__pseudo
-														span.it-checkbox__text    Диск с шиной "Avtoros" 700/55- 2ILT"
-											li.it-configurator__checkbox-item
-												.it-checkbox-wrap
-													label.it-checkbox.it-checkbox--indent
-														input.it-checkbox__default(type='radio', name='model')
-														span.it-checkbox__pseudo
-														span.it-checkbox__text    Диск с шиной "Avtoros" 700/55- 2ILT"
-											li.it-configurator__checkbox-item
-												.it-checkbox-wrap
-													label.it-checkbox.it-checkbox--indent
-														input.it-checkbox__default(type='radio', name='model')
-														span.it-checkbox__pseudo
-														span.it-checkbox__text    Диск с шиной "Avtoros" 700/55- 2ILT"
-											li.it-configurator__checkbox-item
-												.it-checkbox-wrap
-													label.it-checkbox.it-checkbox--indent
-														input.it-checkbox__default(type='radio', name='model')
-														span.it-checkbox__pseudo
-														span.it-checkbox__text    Диск с шиной "Avtoros" 700/55- 2ILT"
+									.it-configurator__outer-wrapper(data-scroll-wrap)
+										.it-configurator__checkbox-list-wrap
+											ul.it-configurator__checkbox-list.it-configurator__checkbox-list--options
+												li.it-configurator__checkbox-item
+													.it-checkbox-wrap
+														label.it-checkbox.it-checkbox--indent
+															input.it-checkbox__default(type='checkbox', name='model')(data-checkbox-item="1")
+															span.it-checkbox__pseudo
+															span.it-checkbox__text    Диск с шиной 1300х700-21" Арктиктранс
+												li.it-configurator__checkbox-item
+													.it-checkbox-wrap
+														label.it-checkbox.it-checkbox--indent
+															input.it-checkbox__default(type='checkbox', name='model')(data-checkbox-item="2")
+															span.it-checkbox__pseudo
+															span.it-checkbox__text    Диск с шиной 1300х600-21" Трэкол Вездеход
+												li.it-configurator__checkbox-item
+													.it-checkbox-wrap
+														label.it-checkbox.it-checkbox--indent
+															input.it-checkbox__default(type='checkbox', name='model')(data-checkbox-item="3")
+															span.it-checkbox__pseudo
+															span.it-checkbox__text    Диск с шиной "Avtoros" 700/55- 2ILT"
+												li.it-configurator__checkbox-item
+													.it-checkbox-wrap
+														label.it-checkbox.it-checkbox--indent
+															input.it-checkbox__default(type='checkbox', name='model')(data-checkbox-item="4")
+															span.it-checkbox__pseudo
+															span.it-checkbox__text    Диск с шиной "Avtoros" 700/55- 2ILT"
+												li.it-configurator__checkbox-item
+													.it-checkbox-wrap
+														label.it-checkbox.it-checkbox--indent
+															input.it-checkbox__default(type='checkbox', name='model')(data-checkbox-item="5")
+															span.it-checkbox__pseudo
+															span.it-checkbox__text    Диск с шиной "Avtoros" 700/55- 2ILT"
+												li.it-configurator__checkbox-item
+													.it-checkbox-wrap
+														label.it-checkbox.it-checkbox--indent
+															input.it-checkbox__default(type='checkbox', name='model')
+															span.it-checkbox__pseudo
+															span.it-checkbox__text    Диск с шиной "Avtoros" 700/55- 2ILT"
+												li.it-configurator__checkbox-item
+													.it-checkbox-wrap
+														label.it-checkbox.it-checkbox--indent
+															input.it-checkbox__default(type='checkbox', name='model')
+															span.it-checkbox__pseudo
+															span.it-checkbox__text    Диск с шиной "Avtoros" 700/55- 2ILT"
+												li.it-configurator__checkbox-item
+													.it-checkbox-wrap
+														label.it-checkbox.it-checkbox--indent
+															input.it-checkbox__default(type='checkbox', name='model')
+															span.it-checkbox__pseudo
+															span.it-checkbox__text    Диск с шиной "Avtoros" 700/55- 2ILT"
 									a(href="#").it-configurator__character__link
 										|	выбрать из полного списка
 						.it-configurator__inner-main-bottom
@@ -197,19 +198,19 @@ section#it-configurator.it-configurator.it-all--indent
 				.it-configurator__half.it-configurator__half--right
 					.it-configurator__inner-top.active(data-it-conf-part="1")
 						ul.it-configurator__checkbox-list
-							li.it-configurator__checkbox-item.active
+							li.it-configurator__checkbox-item.active(data-it-models)
 								.it-checkbox-wrap
 									label.it-checkbox.it-checkbox--indent
 										input.it-checkbox__default(type='radio', name='model', checked)
 										span.it-checkbox__pseudo
 										span.it-checkbox__text    КРЕЧЕТ Z 210-91
-							li.it-configurator__checkbox-item
+							li.it-configurator__checkbox-item(data-it-models)
 								.it-checkbox-wrap
 									label.it-checkbox.it-checkbox--indent
 										input.it-checkbox__default(type='radio', name='model')
 										span.it-checkbox__pseudo
 										span.it-checkbox__text    КРЕЧЕТ Z 320-91
-							li.it-configurator__checkbox-item
+							li.it-configurator__checkbox-item(data-it-models)
 								.it-checkbox-wrap
 									label.it-checkbox.it-checkbox--indent
 										input.it-checkbox__default(type='radio', name='model')
@@ -277,12 +278,12 @@ section#it-configurator.it-configurator.it-all--indent
 											input.it-checkbox-prepayment__default(type='radio', name='prepayment' value="0")
 											span.it-checkbox-prepayment__pseudo
 											span.it-checkbox-prepayment__text    0%
-					.it-configurator__inner-center.it-configurator__inner-center--mod-2
+					.it-configurator__inner-center.it-configurator__inner-center--mod-2(data-it-conf-part="2")
 						.it-configurator__color
 							.it-configurator__color-title
-								|    Выберите размер предоплаты
+								|    Можем изготовить вездеход любой расцветки
 							.it-configurator__color-input-wrap
-								input.it-configurator__color-input(type='text', name='color' value="Введите название цвета")
+								input.it-configurator__color-input(type='text', name='color' value="" placeholder="Введите название цвета")
 							.it-configurator__color-comment
 								|    * Цвет снегоболотоходов на выбор заказчика.
 								br
