@@ -203,35 +203,30 @@ function perfectScrollStart () {
 }
 
 
-var checkboxItem = $("[data-checkbox-item]"),
-    checkboxItemModal = $("[data-checkbox-item-modal]");
-
-function checkeds ($this){
-    
-
-}
+var checkboxItem = $("[data-checkbox-item]");
 
 checkboxItem.each(function (indx, elem) {
     var $this = $(elem);
-
-
     $this.on("click", function () {
-        $this = $(this);
-
-        if ($this.attr("checked")) {
-            $("[data-checkbox-item='1']").attr("checked", "checked");
+        if ($this.prop("checked")) {
+            $("[data-checkbox-item='" + indx +  "']").prop("checked", "checked");
         } else {
-            $("[data-checkbox-item='1']").removeAttr("checked");
+            $("[data-checkbox-item='" + indx + "']").prop("checked", false);
         }
     });
 
 });
 
-// checkboxItem.on("click", function () {
-//     if($this.attr("checked")){
-//     $("[data-checkbox-item='1']").attr("checked", "checked")
-//     } else {
-//         $("[data-checkbox-item='1']").removeAttr("checked");
-//     }
-//
-// })
+
+var cityChange = $("[data-it-city-change]"),
+cityChangeBtn = $("[data-it-city-change-btn]");
+cityChangeBtn.on("click", function () {
+    showDropdown(cityChange);
+});
+
+showDropdown = function (element) {
+    var event;
+    event = document.createEvent('MouseEvents');
+    event.initMouseEvent('mousedown', true, true, window);
+    element.dispatchEvent(event);
+};

@@ -75,14 +75,21 @@
                               <li class="it-configurator__checkbox-item">
                                 <div class="it-checkbox-wrap">
                                   <label class="it-checkbox it-checkbox--indent">
-                                    <input class="it-checkbox__default" type="checkbox" name="model" data-checkbox-item="1"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Диск с шиной 1300х700-21" Арктиктранс</span>
+                                    <input class="it-checkbox__default first" type="checkbox" name="model" data-checkbox-item="0"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Диск с шиной 1300х700-21" Арктиктранс</span>
                                   </label>
                                 </div>
                               </li>
                               <li class="it-configurator__checkbox-item">
                                 <div class="it-checkbox-wrap">
                                   <label class="it-checkbox it-checkbox--indent">
-                                    <input class="it-checkbox__default" type="checkbox" name="model" data-checkbox-item="2"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Диск с шиной 1300х600-21" Трэкол Вездеход</span>
+                                    <input class="it-checkbox__default" type="checkbox" name="model" data-checkbox-item="1"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Диск с шиной 1300х600-21" Трэкол Вездеход</span>
+                                  </label>
+                                </div>
+                              </li>
+                              <li class="it-configurator__checkbox-item">
+                                <div class="it-checkbox-wrap">
+                                  <label class="it-checkbox it-checkbox--indent">
+                                    <input class="it-checkbox__default" type="checkbox" name="model" data-checkbox-item="2"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Диск с шиной "Avtoros" 700/55- 2ILT"</span>
                                   </label>
                                 </div>
                               </li>
@@ -110,21 +117,14 @@
                               <li class="it-configurator__checkbox-item">
                                 <div class="it-checkbox-wrap">
                                   <label class="it-checkbox it-checkbox--indent">
-                                    <input class="it-checkbox__default" type="checkbox" name="model"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Диск с шиной "Avtoros" 700/55- 2ILT"</span>
+                                    <input class="it-checkbox__default" type="checkbox" name="model" data-checkbox-item="6"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Диск с шиной "Avtoros" 700/55- 2ILT"</span>
                                   </label>
                                 </div>
                               </li>
                               <li class="it-configurator__checkbox-item">
                                 <div class="it-checkbox-wrap">
                                   <label class="it-checkbox it-checkbox--indent">
-                                    <input class="it-checkbox__default" type="checkbox" name="model"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Диск с шиной "Avtoros" 700/55- 2ILT"</span>
-                                  </label>
-                                </div>
-                              </li>
-                              <li class="it-configurator__checkbox-item">
-                                <div class="it-checkbox-wrap">
-                                  <label class="it-checkbox it-checkbox--indent">
-                                    <input class="it-checkbox__default" type="checkbox" name="model"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Диск с шиной "Avtoros" 700/55- 2ILT"</span>
+                                    <input class="it-checkbox__default" type="checkbox" name="model" data-checkbox-item="7"><span class="it-checkbox__pseudo"></span><span class="it-checkbox__text">   Диск с шиной "Avtoros" 700/55- 2ILT"</span>
                                   </label>
                                 </div>
                               </li>
@@ -164,9 +164,13 @@
                         <div class="it-configurator__form-bottom-half it-configurator__form-bottom-half--left">
                           <div class="it-configurator__form-half it-configurator__form-half--size-1">
                             <div class="it-configurator__form-input-title">   Населенный пункт:</div>
-                            <input class="it-configurator__form-input" type="text" name="city" checked placeholder="Москва">
+                            <select class="it-configurator__form-input" type="text" name="city" placeholder="Москва" data-it-city-change>
+                              <option value="Москва">	Москва</option>
+                              <option value="Тюмень">	Тюмень</option>
+                              <option value="Челябинск">	Челябинск</option>
+                            </select>
                           </div>
-                          <div class="it-configurator__form-input-change">	Изменить</div>
+                          <div class="it-configurator__form-input-change" data-it-city-change-btn>	Изменить</div>
                         </div>
                         <div class="it-configurator__form-bottom-half it-configurator__form-bottom-half--right">
                           <label class="it-checkbox it-configurator__form-checkbox">
@@ -307,52 +311,52 @@
                   <ul class="it-configurator-options__inner-list">
                     <li class="it-configurator-options__inner-item">
                       <label class="it-checkbox-options">
-                        <input class="it-checkbox-options__default" type="checkbox" name="options" data-checkbox-item="1"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Диск c шиной 1300x700-21" (Арктиктранс)</span>
+                        <input class="it-checkbox-options__default second" type="checkbox" name="options" data-checkbox-item="0"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Диск c шиной 1300x700-21" (Арктиктранс)</span>
                       </label>
                     </li>
                     <li class="it-configurator-options__inner-item">
                       <label class="it-checkbox-options">
-                        <input class="it-checkbox-options__default" type="checkbox" name="options" data-checkbox-item="2"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Удлинитель подушки переднего сиденья с откидной подножкой в сборе</span>
+                        <input class="it-checkbox-options__default" type="checkbox" name="options" data-checkbox-item="1"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Удлинитель подушки переднего сиденья с откидной подножкой в сборе</span>
                       </label>
                     </li>
                     <li class="it-configurator-options__inner-item">
                       <label class="it-checkbox-options">
-                        <input class="it-checkbox-options__default" type="checkbox" name="options" data-checkbox-item="3"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Подогреватель двигателя автономный WEBASTO Thermo Top Е Diesel в сборе</span>
+                        <input class="it-checkbox-options__default" type="checkbox" name="options" data-checkbox-item="2"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Подогреватель двигателя автономный WEBASTO Thermo Top Е Diesel в сборе</span>
                       </label>
                     </li>
                     <li class="it-configurator-options__inner-item">
                       <label class="it-checkbox-options">
-                        <input class="it-checkbox-options__default" type="checkbox" name="options" data-checkbox-item="4"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Диск с шиной 1300x600-21" (Трэкол Вездеход,)</span>
+                        <input class="it-checkbox-options__default" type="checkbox" name="options" data-checkbox-item="3"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Диск с шиной 1300x600-21" (Трэкол Вездеход,)</span>
                       </label>
                     </li>
                     <li class="it-configurator-options__inner-item">
                       <label class="it-checkbox-options">
-                        <input class="it-checkbox-options__default" type="checkbox" name="options" data-checkbox-item="5"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Сиденье откидное на колесную арку в сборе</span>
+                        <input class="it-checkbox-options__default" type="checkbox" name="options" data-checkbox-item="4"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Сиденье откидное на колесную арку в сборе</span>
                       </label>
                     </li>
                     <li class="it-configurator-options__inner-item">
                       <label class="it-checkbox-options">
-                        <input class="it-checkbox-options__default" type="checkbox" name="options"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Подогреватель двигателя автономный WEBASTO Thermo Top Е Benzin в сборе</span>
+                        <input class="it-checkbox-options__default" type="checkbox" name="options" data-checkbox-item="5"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Подогреватель двигателя автономный WEBASTO Thermo Top Е Benzin в сборе</span>
                       </label>
                     </li>
                     <li class="it-configurator-options__inner-item">
                       <label class="it-checkbox-options">
-                        <input class="it-checkbox-options__default" type="checkbox" name="options"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Диск с шиной "Avtoros" 700/55- 21LT"</span>
+                        <input class="it-checkbox-options__default" type="checkbox" name="options" data-checkbox-item="6"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Диск с шиной "Avtoros" 700/55- 21LT"</span>
                       </label>
                     </li>
                     <li class="it-configurator-options__inner-item">
                       <label class="it-checkbox-options">
-                        <input class="it-checkbox-options__default" type="checkbox" name="options"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Комплект установки откидной подножки под люк</span>
+                        <input class="it-checkbox-options__default" type="checkbox" name="options" data-checkbox-item="7"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Комплект установки откидной подножки под люк</span>
                       </label>
                     </li>
                     <li class="it-configurator-options__inner-item">
                       <label class="it-checkbox-options">
-                        <input class="it-checkbox-options__default" type="checkbox" name="options"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Лебедка задняя DV-6 std</span>
+                        <input class="it-checkbox-options__default" type="checkbox" name="options" data-checkbox-item="8"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Лебедка задняя DV-6 std</span>
                       </label>
                     </li>
                     <li class="it-configurator-options__inner-item">
                       <label class="it-checkbox-options">
-                        <input class="it-checkbox-options__default" type="checkbox" name="options"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Установка розетки задняя 12V</span>
+                        <input class="it-checkbox-options__default" type="checkbox" name="options" data-checkbox-item="9"><span class="it-checkbox-options__pseudo"></span><span class="it-checkbox-options__text">   Установка розетки задняя 12V</span>
                       </label>
                     </li>
                     <li class="it-configurator-options__inner-item">

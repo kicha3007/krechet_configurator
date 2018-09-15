@@ -98,15 +98,21 @@ section#it-configurator.it-configurator.it-all--indent
 												li.it-configurator__checkbox-item
 													.it-checkbox-wrap
 														label.it-checkbox.it-checkbox--indent
-															input.it-checkbox__default(type='checkbox', name='model')(data-checkbox-item="1")
+															input.it-checkbox__default.first(type='checkbox', name='model')(data-checkbox-item="0")
 															span.it-checkbox__pseudo
 															span.it-checkbox__text    Диск с шиной 1300х700-21" Арктиктранс
 												li.it-configurator__checkbox-item
 													.it-checkbox-wrap
 														label.it-checkbox.it-checkbox--indent
-															input.it-checkbox__default(type='checkbox', name='model')(data-checkbox-item="2")
+															input.it-checkbox__default(type='checkbox', name='model')(data-checkbox-item="1")
 															span.it-checkbox__pseudo
 															span.it-checkbox__text    Диск с шиной 1300х600-21" Трэкол Вездеход
+												li.it-configurator__checkbox-item
+													.it-checkbox-wrap
+														label.it-checkbox.it-checkbox--indent
+															input.it-checkbox__default(type='checkbox', name='model')(data-checkbox-item="2")
+															span.it-checkbox__pseudo
+															span.it-checkbox__text    Диск с шиной "Avtoros" 700/55- 2ILT"
 												li.it-configurator__checkbox-item
 													.it-checkbox-wrap
 														label.it-checkbox.it-checkbox--indent
@@ -128,19 +134,13 @@ section#it-configurator.it-configurator.it-all--indent
 												li.it-configurator__checkbox-item
 													.it-checkbox-wrap
 														label.it-checkbox.it-checkbox--indent
-															input.it-checkbox__default(type='checkbox', name='model')
+															input.it-checkbox__default(type='checkbox', name='model')(data-checkbox-item="6")
 															span.it-checkbox__pseudo
 															span.it-checkbox__text    Диск с шиной "Avtoros" 700/55- 2ILT"
 												li.it-configurator__checkbox-item
 													.it-checkbox-wrap
 														label.it-checkbox.it-checkbox--indent
-															input.it-checkbox__default(type='checkbox', name='model')
-															span.it-checkbox__pseudo
-															span.it-checkbox__text    Диск с шиной "Avtoros" 700/55- 2ILT"
-												li.it-configurator__checkbox-item
-													.it-checkbox-wrap
-														label.it-checkbox.it-checkbox--indent
-															input.it-checkbox__default(type='checkbox', name='model')
+															input.it-checkbox__default(type='checkbox', name='model')(data-checkbox-item="7")
 															span.it-checkbox__pseudo
 															span.it-checkbox__text    Диск с шиной "Avtoros" 700/55- 2ILT"
 									a(href="#").it-configurator__character__link
@@ -181,8 +181,14 @@ section#it-configurator.it-configurator.it-all--indent
 									.it-configurator__form-half.it-configurator__form-half--size-1
 										.it-configurator__form-input-title
 											|    Населенный пункт:
-										input.it-configurator__form-input(type='text', name='city', checked placeholder="Москва")
-									.it-configurator__form-input-change
+										select.it-configurator__form-input(type='text', name='city', placeholder="Москва" data-it-city-change)
+											option(value="Москва")
+												|	Москва
+											option(value="Тюмень")
+												|	Тюмень
+											option(value="Челябинск")
+												|	Челябинск
+									.it-configurator__form-input-change(data-it-city-change-btn)
 										|	Изменить
 								.it-configurator__form-bottom-half.it-configurator__form-bottom-half--right
 									label.it-checkbox.it-configurator__form-checkbox
