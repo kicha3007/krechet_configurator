@@ -153,7 +153,7 @@ section#it-configurator.it-configurator.it-all--indent
 							.it-configurator__inner-print(data-it-conf-part="2")
 								a.it-configurator__inner-print-link(href="#")
 									| Вывести подбор параметров в pdf
-					section.it-configurator__form(data-it-conf-part="3")
+					form.it-configurator__form(data-it-conf-part="3" method="post" action="")
 						.it-configurator__form-wrap
 							.it-configurator__form-title
 								| Форма отправки
@@ -181,15 +181,16 @@ section#it-configurator.it-configurator.it-all--indent
 									.it-configurator__form-half.it-configurator__form-half--size-1
 										.it-configurator__form-input-title
 											|    Населенный пункт:
-										select.it-configurator__form-input(type='text', name='city', placeholder="Москва" data-it-city-change)
-											option(value="Москва")
-												|	Москва
-											option(value="Тюмень")
-												|	Тюмень
-											option(value="Челябинск")
-												|	Челябинск
-									.it-configurator__form-input-change(data-it-city-change-btn)
-										|	Изменить
+										.it-configurator__form-city-wrap
+											.it-configurator__form-input-city(tabindex='1')
+												input#opt1.it-configurator__form-selectopt(name='test', type='radio', checked='')
+												label.it-configurator__form-label(for='opt1') Москва
+												input#opt2.it-configurator__form-selectopt(name='test', type='radio')
+												label.it-configurator__form-label(for='opt2') Тюмень
+												input#opt3.it-configurator__form-selectopt(name='test', type='radio')
+												label.it-configurator__form-label(for='opt3') Челябинск
+											.it-configurator__form-input-change(data-it-city-change-btn)
+												|	Изменить
 								.it-configurator__form-bottom-half.it-configurator__form-bottom-half--right
 									label.it-checkbox.it-configurator__form-checkbox
 											input.it-checkbox__default(type='checkbox', name='comment')

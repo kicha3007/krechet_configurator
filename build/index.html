@@ -138,7 +138,7 @@
                       <div class="it-configurator__inner-print" data-it-conf-part="2"><a class="it-configurator__inner-print-link" href="#">Вывести подбор параметров в pdf</a></div>
                     </div>
                   </div>
-                  <section class="it-configurator__form" data-it-conf-part="3">
+                  <form class="it-configurator__form" data-it-conf-part="3" method="post" action="">
                     <div class="it-configurator__form-wrap">
                       <div class="it-configurator__form-title">Форма отправки</div>
                       <div class="it-configurator__form-subtitle">	Время изготовления вездехода от 45 рабочих дней</div>
@@ -164,13 +164,18 @@
                         <div class="it-configurator__form-bottom-half it-configurator__form-bottom-half--left">
                           <div class="it-configurator__form-half it-configurator__form-half--size-1">
                             <div class="it-configurator__form-input-title">   Населенный пункт:</div>
-                            <select class="it-configurator__form-input" type="text" name="city" placeholder="Москва" data-it-city-change>
-                              <option value="Москва">	Москва</option>
-                              <option value="Тюмень">	Тюмень</option>
-                              <option value="Челябинск">	Челябинск</option>
-                            </select>
+                            <div class="it-configurator__form-city-wrap">
+                              <div class="it-configurator__form-input-city" tabindex="1">
+                                <input class="it-configurator__form-selectopt" id="opt1" name="test" type="radio" checked="">
+                                <label class="it-configurator__form-label" for="opt1">Москва</label>
+                                <input class="it-configurator__form-selectopt" id="opt2" name="test" type="radio">
+                                <label class="it-configurator__form-label" for="opt2">Тюмень</label>
+                                <input class="it-configurator__form-selectopt" id="opt3" name="test" type="radio">
+                                <label class="it-configurator__form-label" for="opt3">Челябинск</label>
+                              </div>
+                              <div class="it-configurator__form-input-change" data-it-city-change-btn>	Изменить</div>
+                            </div>
                           </div>
-                          <div class="it-configurator__form-input-change" data-it-city-change-btn>	Изменить</div>
                         </div>
                         <div class="it-configurator__form-bottom-half it-configurator__form-bottom-half--right">
                           <label class="it-checkbox it-configurator__form-checkbox">
@@ -182,7 +187,7 @@
                         <div class="it-configurator__form-btn it-btn it-btn--border">	Отправить</div>
                       </div>
                     </div>
-                  </section>
+                  </form>
                 </div>
                 <div class="it-configurator__half it-configurator__half--right">
                   <div class="it-configurator__inner-top active" data-it-conf-part="1">

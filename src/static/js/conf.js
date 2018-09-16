@@ -193,7 +193,7 @@ var perfectScrollContainer = document.querySelector('[data-scroll-wrap]');
 
 function perfectScrollStart () {
 
-    PerfectScrollbarElement = new PerfectScrollbar(perfectScrollContainer, {
+    var PerfectScrollbarElement = new PerfectScrollbar(perfectScrollContainer, {
         maxScrollbarLength: 65,
         wheelPropagation: true,
         suppressScrollX: true,
@@ -218,15 +218,15 @@ checkboxItem.each(function (indx, elem) {
 });
 
 
-var cityChange = $("[data-it-city-change]"),
-cityChangeBtn = $("[data-it-city-change-btn]");
-cityChangeBtn.on("click", function () {
-    showDropdown(cityChange);
-});
-
-showDropdown = function (element) {
-    var event;
-    event = document.createEvent('MouseEvents');
-    event.initMouseEvent('mousedown', true, true, window);
-    element.dispatchEvent(event);
-};
+// var cityChange = $("[data-it-city-change]"),
+// cityChangeBtn = $("[data-it-city-change-btn]");
+// cityChangeBtn.on("click", function () {
+//     showDropdown(cityChange);
+// });
+//
+// showDropdown = function (element) {
+//     var event;
+//     event = document.createEvent('MouseEvents');
+//     event.initMouseEvent('mousedown', true, true, window);
+//     element.dispatchEvent(event);
+// };
