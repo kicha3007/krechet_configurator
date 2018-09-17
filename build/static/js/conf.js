@@ -234,3 +234,38 @@ function mediaTransferBlocks(mediaSizeDescktop) {
 var mediaSizeDescktop = window.matchMedia("screen and (max-width: 576px)");
 mediaSizeDescktop.addListener(mediaTransferBlocks);
 mediaTransferBlocks(mediaSizeDescktop);
+
+$("[data-btn-print]").click(function () {
+
+    // checkboxItem.each(function (indx, elem) {
+    //     var $this = $(elem);
+    //
+    //
+    //     var printBlock = $this.prop("checked");
+    //     console.log(printBlock);
+    //
+    // });
+    //
+    
+    
+    var printBlock = $("[data-print-content]").find($("[data-checkbox-item]:checked").closest(".it-checkbox-options"));
+
+
+    var prtContent = $("[data-print-content-outer]").prepend(printBlock);
+    console.log(prtContent.outerHTML);
+
+    setTimeout(function () {
+        var WinPrint = window.open('', '', 'left=0,top=0,width=900,height=900,toolbar=0,scrollbars=0,status=0');
+        var prtCSS = '<link type="text/css" href="/local/css/print.css" rel="stylesheet"/>';
+        WinPrint.document.write('<html><head>');
+        WinPrint.document.write(prtCSS);
+        WinPrint.document.write('</head><body onload="print();close();">');
+        WinPrint.document.write('');
+        WinPrint.document.write($("[data-print-content-outer]").innerHTML);
+        WinPrint.document.write('</body></html>');
+        WinPrint.document.close();
+        WinPrint.focus();
+    }, 300);
+
+
+});
