@@ -28,7 +28,7 @@ section#it-configurator.it-configurator.it-all--indent
 			.it-configurator__inner-wrapper
 				.it-configurator__half.it-configurator__half--left
 					.it-configurator__inner-wrap.active(data-it-conf-part="2" data-it-main-content)
-						.it-configurator__inner-half.it-configurator__inner-half--left
+						.it-configurator__inner-half.it-configurator__inner-half--left(data-conf-half-left)
 							.it-slider
 								.it-slider__top.slider-for
 									.it-slider__img-wrap
@@ -159,7 +159,7 @@ section#it-configurator.it-configurator.it-all--indent
 								| Форма отправки
 							.it-configurator__form-subtitle
 								|	Время изготовления вездехода от 45 рабочих дней
-							.it-configurator__form-input-wrap
+							.it-configurator__form-input-wrap(data-it-form-wrap)
 								.it-configurator__form-half
 									.it-configurator__form-input-title
 										|	E-mail:
@@ -202,8 +202,8 @@ section#it-configurator.it-configurator.it-all--indent
 							.it-configurator__form-buttons
 								.it-configurator__form-btn.it-btn.it-btn--border
 									|	Отправить
-				.it-configurator__half.it-configurator__half--right
-					.it-configurator__inner-top.active(data-it-conf-part="1")
+				.it-configurator__half.it-configurator__half--right(data-conf-half-right)
+					.it-configurator__inner-top.active(data-it-conf-part="1" data-model-block)
 						ul.it-configurator__checkbox-list
 							li.it-configurator__checkbox-item.active(data-it-models)
 								.it-checkbox-wrap
@@ -235,7 +235,7 @@ section#it-configurator.it-configurator.it-all--indent
 							.it-configurator__price-inner-bottom
 								|    с учетом дополнительного оборудования
 							a(href="#").it-configurator__inner-print-link--mobile
-					.it-configurator__inner-top.it-configurator__inner-top--mod-3(data-it-conf-part="3")
+					.it-configurator__inner-top.it-configurator__inner-top--mod-3(data-it-conf-part="3" data-it-sum)
 						.it-configurator__sum
 								ul.it-configurator__sum-list
 									li.it-configurator__sum-list-item
@@ -254,7 +254,7 @@ section#it-configurator.it-configurator.it-all--indent
 										span.it-configurator__sum-list-item-value
 											|    0 руб.
 									li.it-configurator__sum-list-item
-										span.it-configurator__sum-list-item-key
+										span.it-configurator__sum-list-item-key.it-configurator__sum-list-item-key--font-mobile
 											|    Итого:
 										span.it-configurator__sum-list-item-value
 											|   5 800 000 руб.

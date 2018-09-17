@@ -220,15 +220,17 @@ checkboxItem.each(function (indx, elem) {
 });
 
 
-// var cityChange = $("[data-it-city-change]"),
-// cityChangeBtn = $("[data-it-city-change-btn]");
-// cityChangeBtn.on("click", function () {
-//     showDropdown(cityChange);
-// });
-//
-// showDropdown = function (element) {
-//     var event;
-//     event = document.createEvent('MouseEvents');
-//     event.initMouseEvent('mousedown', true, true, window);
-//     element.dispatchEvent(event);
-// };
+
+function mediaTransferBlocks(mediaSizeDescktop) {
+    if (mediaSizeDescktop.matches) {
+        var modelList =  $('[data-model-block]');
+        modelList.prependTo($("[data-conf-half-left]"));
+
+        var allSumBlock = $("[data-it-sum]");
+        allSumBlock.prependTo($("[data-it-form-wrap]"));
+    }
+}
+
+var mediaSizeDescktop = window.matchMedia("screen and (max-width: 576px)");
+mediaSizeDescktop.addListener(mediaTransferBlocks);
+mediaTransferBlocks(mediaSizeDescktop);

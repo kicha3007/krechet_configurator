@@ -174,11 +174,9 @@
   overflow: hidden !important;
 }
 
-.it-slider__top slider-for {
-  max-width: 336px !important;
-  width: 100% !important;
-  overflow: hidden !important;
-}
+
+
+
 
 .it-slider__img-wrap {
   overflow: hidden !important;
@@ -969,7 +967,6 @@
 
 .it-configurator__sum-list-item-key {
   padding-right: 5px;
-  text-transform: uppercase;
 }
 
 .it-configurator__sum-list-item-value {
@@ -1518,6 +1515,7 @@
 
   .it-configurator__form-subtitle {
     border-bottom: none;
+    margin-bottom: 0;
   }
 
   .it-configurator-options__modal .it-container {
@@ -1644,9 +1642,7 @@
     padding-top: 10px;
   }
 
-  .it-configurator__form-wrap {
-    padding: 0 15px;
-  }
+
 
   .it-configurator__form-input-change {
     font-size: 14px;
@@ -1673,6 +1669,49 @@
 
   .it-configurator__character-title {
     padding: 0 15px;
+  }
+
+  .it-slider {
+    min-width: 100%!important;
+  }
+
+  .it-slider__img-wrap {
+    max-width: 100%;
+    max-height: 100%;
+
+  }
+  .it-configurator__form-title {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .it-configurator__form-subtitle {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .it-configurator__inner-top--mod-3 {
+    padding-top: 30px;
+    margin-bottom: 15px;
+
+  }
+
+  .it-configurator__sum-list-item-key--font-mobile {
+    font-weight: 700;
+  }
+
+  .it-configurator__comment {
+    padding-bottom: 25px;
+  }
+
+  .it-configurator__form-half {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .it-configurator__form-bottom-half--right {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
 }
