@@ -208,10 +208,12 @@ var checkboxItem = $("[data-checkbox-item]");
 checkboxItem.each(function (indx, elem) {
     var $this = $(elem);
     $this.on("click", function () {
+        var numberActiveItem = $this.data("checkbox-item");
+        
         if ($this.prop("checked")) {
-            $("[data-checkbox-item='" + indx +  "']").prop("checked", "checked");
+            $("[data-checkbox-item='" + numberActiveItem +  "']").prop("checked", "checked");
         } else {
-            $("[data-checkbox-item='" + indx + "']").prop("checked", false);
+            $("[data-checkbox-item='" + numberActiveItem + "']").prop("checked", false);
         }
     });
 

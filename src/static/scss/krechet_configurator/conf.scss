@@ -756,6 +756,8 @@
   border-bottom: 1px solid #CDCDCD;
 }
 
+
+
 .it-configurator__price-inner-top {
   margin-bottom: 8px;
 
@@ -1319,7 +1321,9 @@
   right: 0 !important;
 }
 
-
+.it-configurator__inner-print-link--mobile {
+  display: none;
+}
 
 
 
@@ -1617,9 +1621,8 @@
   }
 
   .it-configurator__inner-top {
-    width: 100%;
-    max-width: 100%;
-    //flex-basis: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 
   .it-configurator__character--options {
@@ -1633,10 +1636,12 @@
   .it-configurator__character__link {
     margin-left: 15px;
     font-size: 14px;
+    margin-bottom: 0;
   }
 
   .it-configurator__inner-top--mod-2 {
     padding-bottom: 20px;
+    padding-top: 10px;
   }
 
   .it-configurator__form-wrap {
@@ -1645,6 +1650,29 @@
 
   .it-configurator__form-input-change {
     font-size: 14px;
+  }
+
+  .it-configurator__inner-print-link {
+    display: none;
+  }
+
+  .it-configurator__price-inner {
+    position: relative;
+  }
+
+  .it-configurator__inner-print-link--mobile {
+    height: 36px;
+    width: 27px;
+    padding: 0;
+    position: absolute;
+    right: 30px;
+    top: 5px;
+    background: url("../img/krechet_configurator/bottom/pdf-icon.png") no-repeat center;
+    display: block;
+  }
+
+  .it-configurator__character-title {
+    padding: 0 15px;
   }
 
 }
